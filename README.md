@@ -16,7 +16,7 @@ No dependencies need installing. Open `index.html` in a browser, or use Node 20+
 for a local preview:
 
 ```powershell
-cd 'C:\Users\Pasindu\OneDrive - UNSW\#Publications\##Thesis\Github repo summary\Research_Story_Hub'
+cd my-phd-from-sensing-to-safety
 npm run dev
 ```
 
