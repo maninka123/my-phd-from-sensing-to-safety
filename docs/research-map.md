@@ -5,6 +5,9 @@ reconstruction and safety interpretation. Separate evaluations establish its
 building blocks. A complete active-face acquisition-to-reasoning trial remains
 future work.
 
+The software catalogue follows the revised author portfolio dated 8 October
+2026 and includes 13 PhD repositories.
+
 ## The story
 
 1. Longwall visibility: workers, cutting machinery and supports occupy a changing space.
@@ -22,8 +25,8 @@ future work.
 | 1 | Introduction, objectives and distinct contributions | Entire programme |
 | 2 | Review, monitoring requirements and readiness | Requirements inform all tools |
 | 3.1 | Single-shot extrinsic calibration | single-shot-lidar-camera-calibration |
-| 3.2 | Enclosure and time correction | enclosure-aware-lidar-correction; lidar-enclosure-geometry; livox-avia-camera-timing; livox-flywheel-calib-sim |
-| 3.3 | Rotating-aperture temporal target | rotating-target-calibration-studio; livox-flywheel-calib-sim; livox-avia-camera-timing |
+| 3.2 | Enclosure and time correction | enclosure-aware-lidar-correction; livox-avia-camera-timing |
+| 3.3 | Rotating-aperture temporal target | rotating-target-calibration-studio; livox-avia-camera-timing |
 | 3.4 | Multi-camera colourisation and enhancement | Principles relate to Sensor_Computer; different research rig |
 | 4 | Protected unit and pre-deployment validation | Sensor_Computer; 3D_monitoring_device_simulation_underground |
 | 5 | Array processing, coverage and reconstruction | Sensor_Computer; simulation; Lidar_camera_FOV_analysis; Multi_device_reconstruction-pose_graph; Central_Monitoring_Platform; Dynamic_Object_Detection as supporting tool |

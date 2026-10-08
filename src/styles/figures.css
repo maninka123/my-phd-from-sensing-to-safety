@@ -1,0 +1,71 @@
+/* Paper panels remain intact. Captions and source links use native reading sizes. */
+.paper-figure {
+  min-width: 0;
+  padding: 1.6rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: white;
+  box-shadow: 0 8px 28px #15395b05;
+}
+.paper-figure-heading { margin-bottom: 1.3rem; }
+.paper-figure-heading .status-label { color: var(--teal); margin-bottom: .65rem; display: block; }
+.paper-figure-heading h3 { font-size: 1.45rem; line-height: 1.25; margin: 0; }
+.paper-figure-image { padding: .5rem; background: white; border-radius: .7rem; }
+.paper-figure-image img { width: 100%; height: auto; object-fit: contain; }
+.paper-figure .caption { padding-top: 1.25rem; border-top: 1px solid var(--line); margin-top: 1.3rem; }
+.paper-figure .caption p { font-size: var(--text-caption); line-height: 1.7; margin-bottom: 1rem; }
+.paper-figure-credit { color: var(--muted); }
+.paper-figure .text-link { display: inline-block; }
+.paper-figure-featured { margin-top: 2.5rem; }
+.paper-figure-featured .paper-figure-image { max-width: 62rem; margin-inline: auto; }
+.paper-figure-tall .paper-figure-image img { max-height: 38rem; }
+.paper-figure-compact { padding: 1.2rem; }
+.paper-figure-compact .paper-figure-heading h3 { font-size: 1.2rem; }
+.array-introduction, .operator-introduction { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 3rem; }
+.array-introduction p, .operator-introduction p { color: var(--muted); font-size: var(--text-body); line-height: 1.7; }
+.array-introduction .section-links { margin-top: 1rem; }
+.paper-figure-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.5rem; margin-top: 1.5rem; align-items: start; }
+.paper-figure-grid .paper-figure-image { min-height: 18rem; display: grid; align-items: center; }
+#story-array > .technical-note { margin-top: 1.5rem; }
+.operator-evidence { margin-top: 3rem; padding-top: 2.5rem; border-top: 1px solid var(--line); }
+.operator-evidence > .paper-figure { margin-top: 1.5rem; }
+.operator-introduction .status-label { color: var(--blue); }
+@media (max-width: 900px) {
+  .paper-figure-grid, .array-introduction, .operator-introduction { grid-template-columns: 1fr; gap: 1.5rem; }
+  .paper-figure-grid .paper-figure-image { min-height: 0; }
+}
+@media (max-width: 700px) {
+  .paper-figure { padding: 1.1rem; }
+  .paper-figure-image { padding: 0; }
+  .paper-figure-heading h3 { font-size: 1.25rem; }
+  .paper-figure-featured { margin-top: 1.5rem; }
+  .operator-evidence { margin-top: 2rem; padding-top: 1.5rem; }
+}
+.unit-illustration { display: grid; grid-template-columns: 1.15fr 1fr; gap: 2.25rem; align-items: center; margin: 0 0 2.5rem; padding: 1.5rem; border: 1px solid var(--line); border-radius: var(--radius); background: #edf3f9; }
+.unit-cutaway { position: relative; min-width: 0; }
+.unit-cutaway img { display: block; width: 100%; height: auto; border-radius: 1rem; }
+.unit-illustration figcaption { min-width: 0; padding: .5rem .75rem .5rem 0; }
+.unit-illustration h3 { font-size: 1.75rem; line-height: 1.2; margin: .7rem 0 1.25rem; }
+.unit-components { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; }
+.unit-components li { display: flex; align-items: flex-start; gap: .8rem; }
+.unit-components strong { display: block; font-size: 1.125rem; line-height: 1.5; }
+.unit-components p { font-size: 1.125rem; line-height: 1.55; color: var(--muted); margin: .1rem 0 0; }
+.unit-marker, .unit-number { display: inline-flex; justify-content: center; align-items: center; width: 2rem; height: 2rem; flex-shrink: 0; border-radius: 50%; background: #244e70; color: white; font-size: 1.125rem; font-weight: 650; line-height: 1; }
+.unit-marker { position: absolute; transform: translate(-50%,-50%); box-shadow: 0 0 0 4px #edf3f9; }
+.unit-marker-1 { left: 85.45%; top: 37.9%; }
+.unit-marker-2 { left: 17.45%; top: 59.35%; }
+.unit-marker-3 { left: 17.45%; top: 79.03%; }
+.unit-marker-4 { left: 85.45%; top: 10.65%; }
+.unit-marker-5 { left: 85.45%; top: 80.81%; }
+.unit-illustration .caption { margin: 1.25rem 0 0; }
+@media (max-width: 900px) {
+  .unit-illustration { grid-template-columns: 1fr; gap: 1rem; }
+  .unit-cutaway { width: 100%; max-width: 640px; margin: auto; }
+  .unit-components { grid-template-columns: 1fr 1fr; }
+  .unit-illustration figcaption { padding: .5rem; }
+}
+@media (max-width: 560px) {
+  .unit-illustration { padding: .75rem; }
+  .unit-components { grid-template-columns: 1fr; }
+  .unit-illustration h3 { font-size: 1.5rem; }
+}

@@ -1,0 +1,20 @@
+{
+    "source_document":  "GitHub_Repository_Portfolio_Overview.docx",
+    "reviewed_on":  "2026-10-08",
+    "selection":  "PhD repositories retained in the revised author portfolio",
+    "repositories":  [
+                         "Lidar_camera_FOV_analysis",
+                         "single-shot-lidar-camera-calibration",
+                         "enclosure-aware-lidar-correction",
+                         "livox-avia-camera-timing",
+                         "rotating-target-calibration-studio",
+                         "Sensor_Computer",
+                         "Meshing_toolkit",
+                         "Dynamic_Object_Detection",
+                         "Central_Monitoring_Platform",
+                         "3D_monitoring_device_simulation_underground",
+                         "Multi_device_reconstruction-pose_graph",
+                         "Scene-Graph_Mine-Safety",
+                         "Creep_Monitoring"
+                     ]
+}

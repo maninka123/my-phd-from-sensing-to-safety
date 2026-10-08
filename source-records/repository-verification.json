@@ -161,44 +161,6 @@
       "initial_anonymous_api_status": 200
     },
     {
-      "name": "lidar-enclosure-geometry",
-      "url": "https://github.com/maninka123/lidar-enclosure-geometry",
-      "api_url": "https://api.github.com/repos/maninka123/lidar-enclosure-geometry",
-      "review_date": "2026-10-08",
-      "summary_visibility": "Public",
-      "anonymous_api_status": 200,
-      "access": "Publicly accessible",
-      "visibility": "public",
-      "primary_language": "Python",
-      "description": "Reproducible comparison of enclosure-off/on LiDAR point clouds, with geometric distances, scan repeatability baselines, and verified results.",
-      "default_branch": "main",
-      "homepage": null,
-      "archived": false,
-      "last_push": "2026-10-07T10:50:44Z",
-      "licence": {
-        "status": "No licence detected by GitHub; public visibility does not grant reuse permission",
-        "anonymous_licence_status": 404,
-        "classification": "No licence detected; reuse terms unverified"
-      },
-      "readme": {
-        "url": "https://github.com/maninka123/lidar-enclosure-geometry/blob/main/README.md",
-        "raw_url": "https://raw.githubusercontent.com/maninka123/lidar-enclosure-geometry/main/README.md",
-        "sha": "72e342a7edcbeed905ae7c3d2a149b50761aa41e",
-        "local_file": "source-records/repositories/lidar-enclosure-geometry/README.md",
-        "headings": [
-          "LiDAR enclosure geometry",
-          "Key finding",
-          "Dataset",
-          "Get started"
-        ],
-        "external_links": [
-          "https://git-lfs.com/",
-          "https://github.com/maninka123/lidar-enclosure-geometry.git"
-        ]
-      },
-      "initial_anonymous_api_status": 200
-    },
-    {
       "name": "livox-avia-camera-timing",
       "url": "https://github.com/maninka123/livox-avia-camera-timing",
       "api_url": "https://api.github.com/repos/maninka123/livox-avia-camera-timing",
@@ -236,49 +198,6 @@
           "https://doi.org/10.1016/j.measurement.2026.122285",
           "https://doi.org/10.2139/ssrn.7513129",
           "https://github.com/maninka123/livox-avia-camera-timing.git"
-        ]
-      },
-      "initial_anonymous_api_status": 200
-    },
-    {
-      "name": "livox-flywheel-calib-sim",
-      "url": "https://github.com/maninka123/livox-flywheel-calib-sim",
-      "api_url": "https://api.github.com/repos/maninka123/livox-flywheel-calib-sim",
-      "review_date": "2026-10-08",
-      "summary_visibility": "Public",
-      "anonymous_api_status": 200,
-      "access": "Publicly accessible",
-      "visibility": "public",
-      "primary_language": "Python",
-      "description": "Gazebo simulation of a Livox Avia LiDAR observing a rotating sector-cut flywheel target, used to validate the angle-estimation approach behind the flywheel-based temporal calibration method in our Measurement paper. Compares candidate target geometries in simulation before physical fabrication.",
-      "default_branch": "main",
-      "homepage": null,
-      "archived": false,
-      "last_push": "2026-08-12T10:47:36Z",
-      "licence": {
-        "status": "No licence detected by GitHub; public visibility does not grant reuse permission",
-        "anonymous_licence_status": 404,
-        "classification": "No licence detected; reuse terms unverified"
-      },
-      "readme": {
-        "url": "https://github.com/maninka123/livox-flywheel-calib-sim/blob/main/README.md",
-        "raw_url": "https://raw.githubusercontent.com/maninka123/livox-flywheel-calib-sim/main/README.md",
-        "sha": "b2e613f7b74528edd2a02f1cd7456fb611dbb2c8",
-        "local_file": "source-records/repositories/livox-flywheel-calib-sim/README.md",
-        "headings": [
-          "Livox flywheel calibration simulation",
-          "What are v1 and v2?",
-          "Same frame, different target geometry",
-          "Related paper",
-          "Requirements",
-          "Build",
-          "Run v2",
-          "Saved outputs"
-        ],
-        "external_links": [
-          "https://doi.org/10.1016/j.measurement.2026.122285",
-          "https://github.com/maninka123/livox-flywheel-calib-sim.git",
-          "https://www.sciencedirect.com/science/article/pii/S0263224126019949"
         ]
       },
       "initial_anonymous_api_status": 200

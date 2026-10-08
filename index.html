@@ -8,8 +8,13 @@
   <title>Below the Surface · Research Story Hub</title>
   <link rel="icon" href="public/assets/diagrams/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="stylesheet" href="src/styles/typography.css">
+  <link rel="stylesheet" href="src/styles/figures.css">
+  <link rel="stylesheet" href="src/styles/publications.css">
   <script defer src="src/scripts/repository-status.js"></script>
   <script defer src="src/scripts/data.js"></script>
+  <script defer src="src/scripts/paper-figures.js"></script>
+  <script defer src="src/scripts/publications.js"></script>
   <script defer src="src/scripts/app.js"></script>
 </head>
 <body>
@@ -21,13 +26,16 @@
       <a href="#tools" data-nav="tools">Explore the Tools</a>
       <a href="#thesis" data-nav="thesis">The Thesis</a>
     </nav>
-    <a class="header-profile" href="https://github.com/maninka123" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    <div class="header-meta">
+      <div class="header-actions"><button class="publication-trigger" type="button" data-publications aria-haspopup="dialog" aria-controls="repo-dialog">Publication summary</button><a class="header-profile" href="https://github.com/maninka123" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+      <p class="header-updated"><span>Last updated</span> <time datetime="2026-10-09">9 Oct 2026</time></p>
+    </div>
   </header>
   <main id="main" tabindex="-1"></main>
   <footer class="site-footer">
     <div><a class="footer-title" href="#story">Below the Surface</a><p>Pasindu Ranasinghe · UNSW Sydney<br>LiDAR–camera sensing for underground longwall monitoring.</p></div>
     <div class="footer-links"><a href="#tools">Explore the software ↗</a><a href="#thesis">Research & evidence ↗</a><a href="#sources">Sources & image credits ↗</a></div>
-    <p class="footer-note">An exhibition of separately evaluated research stages.<br>Integrated operating-face validation remains future work.</p>
+    <p class="footer-note">My PhD journey from sensing to safety.</p>
   </footer>
   <dialog id="repo-dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div></dialog>
   <div class="sr-only" id="announcement" aria-live="polite"></div>

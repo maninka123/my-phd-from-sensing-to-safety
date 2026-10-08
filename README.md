@@ -46,12 +46,15 @@ validation remains a next step, and I label Creep Monitoring as a concept/protot
 ## Explore my research
 
 - **The Story:** I explain the research through seven illustrated stages.
-- **Explore the Tools:** I connect 15 repositories through an interactive map,
+- **Explore the Tools:** I connect 13 repositories through an interactive map,
   searchable catalogue, filters and tool detail panels.
 - **The Thesis:** I map the seven-chapter structure, nine-paper register,
   software contributions and validation limits.
 - **Sources & credits:** I show where the content and images come from and
   explain their reuse terms.
+
+My current selection follows my revised repository overview (8 October 2026).
+I include only the repositories selected for this PhD story.
 
 ## How I connect the tools
 
@@ -70,8 +73,31 @@ I distinguish three kinds of relationship in the map:
   from aligned clouds describe future workflows, rather than established connectors.
 
 I include exact repository names, purposes, inputs and outputs, research roles,
-related tools, interface types, licences and evidence status. The map also has
+related tools, interface types and evidence status. I show repository links
+without visibility badges or an access filter. The map also has
 keyboard-operated stage buttons and a complete text alternative.
+
+## My publication summary
+
+I make my publication summary available from the header on every view, beside
+GitHub and the last-update date. I show category counts once, with each paper
+listed once in the summary. My current PhD portfolio contains nine papers:
+three published journal articles, four journal manuscripts under review and
+two published conference papers. I list my two related patent applications
+separately from the paper total.
+
+For the published journals, I show the publisher-listed Impact Factor, 2025
+CiteScore and the highest 2025 CiteScore category percentile, with links to the
+publisher and Scopus. I checked these records on 9 October 2026. The summary
+uses `source-records/publication-summary.json`; the build generates
+`src/scripts/publications.js`. My manuscript titles remain linked to their
+available versions, while I display their author-confirmed status as under review.
+
+I include the Australian provisional application’s verified filing title and
+date from IP Australia. I retain the second application number from my thesis
+plan while its exact title and current status await my final details. Journal
+submission venues for the four manuscripts are not identified in the supplied
+files. I keep the summary editable so those details can be added accurately.
 
 ## My evidence and acknowledgements
 
@@ -85,14 +111,22 @@ study’s trolley-based four-camera platform from the later enclosed single-came
 I also include a Rotating Target Calibration Studio screenshot under its MIT
 licence, with the full notice retained. It illustrates noise-free simulation,
 not measured physical timing accuracy. I use original explanatory schematics
-for the mining context, device architecture and method relationships; these
+for the opening context, sensor fusion and method relationships; these
 illustrations are not measured scientific results.
+
+I also include seven complete figures from my hardware, array and safety
+manuscripts: proposed mounting and hardware architecture, pose-graph alignment,
+a simulated before-and-after array comparison, a single-unit colourised cloud,
+the monitoring interface displaying simulation, and the safety graph pipeline.
+I identify the local manuscript versions and evaluation settings in each caption,
+and authorize these selected figures for this hub without claiming an open
+licence. I preserve every panel and provide full-resolution image links.
 
 I exclude partner hardware photographs, confidential roadway reconstructions,
 original manuscripts and screenshots with unresolved reuse terms from the
 public website.
 
-I use a dated GitHub access snapshot from **8 October 2026**: nine repositories
+I use a dated GitHub access snapshot from **8 October 2026**: seven included repositories
 were publicly accessible and six were unavailable anonymously. I describe the
 latter as private according to my repository overview, while recognising that
 an anonymous 404 does not establish current visibility. I also distinguish
@@ -103,11 +137,11 @@ My [source records](source-records/README.md),
 [public source register](source-records/public-source-register.json) and
 [research map](docs/research-map.md) document these boundaries.
 
-I distinguish earlier preprint titles from revised manuscript titles. The hub
+I distinguish earlier manuscript titles from revised manuscript titles. The hub
 includes identified public-record updates for the safety journal paper and
-rotating-target preprint beyond my older thesis plan. I leave unresolved journal
-review statuses, final author contributions, patent details and examination
-snapshots explicitly marked as requiring final records.
+rotating-target manuscript beyond my older thesis plan. I use my confirmed
+under-review wording for the four journal manuscripts. Final author contributions,
+the second patent’s details and examination snapshots still require final records.
 
 ## Run the website locally
 
@@ -130,25 +164,54 @@ npm run check
 node scripts/preview.mjs --dist
 ```
 
+I can regenerate the three matching sensor-fusion illustrations with
+`node scripts/create-fusion-diagrams.mjs`. They share one authored scene and
+camera view; their point samples explain geometry and colour, rather than
+representing a measured scan. The editable outputs live in `public/assets/diagrams/`.
+
+I regenerate my protected-unit illustration with
+`node scripts/create-unit-diagram.mjs`. I drew the LiDAR using the
+[Livox Avia external form](https://www.livoxtech.com/avia) as a reference:
+silver housing, green optical window, side cooling fins and connector.
+The dome and internal arrangement explain the sensing concept and are not to
+scale. Fixed-size numbered HTML labels remain readable on phones; I retain
+the unchanged manuscript architecture figure immediately below.
+
 The build creates `dist/` with relative paths for GitHub Pages. The website needs
 no backend, account, external font, runtime API request or package installation.
 
 ## Repository structure
 
-I separate the website, evidence records, documentation and build scripts:
+I separate the website, evidence records, documentation and build scripts.
+I keep shared reading sizes in `src/styles/typography.css`: 20 px body text on
+desktop, 18 px on mobile, and an 18 px minimum for captions, labels and controls
+at the default browser text size. I preserve browser text-size preferences and
+use wrapping layouts and HTML diagram labels so text remains readable.
+
+I use a larger scale in my tool catalogue and detail panels: 20 px body text
+and 24 px card headings on desktop, with 18 px labels, metadata, controls and
+links. On phones, I keep tool body text at 18 px and card headings at 22 px.
+My thesis paper titles follow the same 24 px desktop / 22 px mobile scale;
+author details, publication records and contribution summaries use the shared
+body size. My byline is 20 px on desktop and 18 px on phones.
+I show the latest website update date beside the GitHub link in the header.
+I maintain that date in `index.html` when I revise the app; it stays fixed
+between updates.
 
 ```text
 my-phd-from-sensing-to-safety/
 ├── index.html                    Entry point and semantic page shell
 ├── src/
-│   ├── styles/main.css           Responsive layout and accessibility styles
+│   ├── styles/                   Layout, shared typography and accessibility styles
 │   └── scripts/
 │       ├── app.js                Story, navigation, map, catalogue and dialogs
 │       ├── data.js               Repository, paper and relationship content
-│       └── repository-status.js  Generated access/licence snapshot
+│       ├── repository-status.js  Generated access/licence snapshot
+│       ├── paper-figures.js       Generated featured figure metadata
+│       └── publications.js       Generated publication and journal metric records
 ├── public/assets/
 │   ├── diagrams/                 Editable explanatory SVG schematics
-│   └── evidence/                 Four CC BY figures and one MIT screenshot
+│   └── evidence/                 Licensed evidence and author-authorized manuscript figures
 ├── scripts/                      Build, preview, checks and diagram generation
 ├── source-records/               Provenance, access/licence and asset metadata
 ├── docs/                         Research map, deployment and verification notes
@@ -171,7 +234,7 @@ manually. See my [deployment guidance](docs/deployment.md).
 
 When I update the hub, I edit relationships in `src/scripts/data.js` and narrative
 rendering in `src/scripts/app.js`, review access and licence records, and record
-provenance for any new assets. I run the build and checks, then review affected
+provenance for any new assets in `source-records/asset-register.json`. I run the build and checks, then review affected
 interactions on desktop and mobile.
 
 In my local thesis workspace, I keep all project changes inside

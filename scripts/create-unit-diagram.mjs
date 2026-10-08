@@ -1,4 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="620" viewBox="0 0 900 620" role="img" aria-labelledby="title description">
+import {writeFile,mkdir} from 'node:fs/promises';
+import {resolve} from 'node:path';
+
+// Original vector illustration. Product form reference: https://www.livoxtech.com/avia
+// The enclosure arrangement is explanatory, not a dimensioned engineering model.
+const out=resolve('public/assets/diagrams');
+await mkdir(out,{recursive:true});
+const fins=Array.from({length:9},(_,i)=>{
+  const y=267+i*13;
+  return `<path d="M551 ${y}l43-17v5l-43 17z" fill="#536577"/><path d="M551 ${y}l43-17" stroke="#f5f8fb" stroke-width="2"/>`;
+}).join('');
+const bolts=[270,330,450,570,630].map((x,i)=>`<ellipse cx="${x}" cy="${i===0||i===4?454:477}" rx="5" ry="3" fill="#647b91"/><path d="M${x-2} ${i===0||i===4?454:477}h4" stroke="#dbe5ed"/>`).join('');
+export const unitDiagram=`<svg xmlns="http://www.w3.org/2000/svg" width="900" height="620" viewBox="0 0 900 620" role="img" aria-labelledby="title description">
 <title id="title">Protected sensing unit with an Avia-inspired LiDAR</title>
 <desc id="description">Original illustrative cutaway. A silver rectangular LiDAR has a green optical window, side cooling fins and a connector. A separate camera and embedded processing module share a metal enclosure beneath a transparent dome. Numbered HTML labels accompany the illustration.</desc>
 <defs>
@@ -17,12 +29,12 @@
 <ellipse cx="450" cy="441" rx="235" ry="67" fill="url(#unit-metal)" stroke="#8fa4b8" stroke-width="2"/>
 <path d="M215 441v63c0 89 470 89 470 0v-63c0 89-470 89-470 0z" fill="url(#unit-base)" stroke="#859caf" stroke-width="2"/>
 <path d="M216 478c42 68 420 69 468 0" fill="none" stroke="#e1eaf2" stroke-width="2" opacity=".8"/>
-<ellipse cx="270" cy="454" rx="5" ry="3" fill="#647b91"/><path d="M268 454h4" stroke="#dbe5ed"/><ellipse cx="330" cy="477" rx="5" ry="3" fill="#647b91"/><path d="M328 477h4" stroke="#dbe5ed"/><ellipse cx="450" cy="477" rx="5" ry="3" fill="#647b91"/><path d="M448 477h4" stroke="#dbe5ed"/><ellipse cx="570" cy="477" rx="5" ry="3" fill="#647b91"/><path d="M568 477h4" stroke="#dbe5ed"/><ellipse cx="630" cy="454" rx="5" ry="3" fill="#647b91"/><path d="M628 454h4" stroke="#dbe5ed"/>
+${bolts}
 <!-- Embedded processing module and mounting platform. -->
 <path d="M342 402l49-24 187 9-47 25z" fill="#637c90" stroke="#3c566c"/>
 <path d="M342 402l189 10v56l-189-10z" fill="#304b61"/>
 <path d="M531 412l47-25v54l-47 27z" fill="#263f53"/>
-<path d="M358 405v48" stroke="#7992a6" stroke-width="3" opacity=".55"/><path d="M378 405v48" stroke="#7992a6" stroke-width="3" opacity=".55"/><path d="M398 405v48" stroke="#7992a6" stroke-width="3" opacity=".55"/><path d="M418 405v48" stroke="#7992a6" stroke-width="3" opacity=".55"/><path d="M438 405v48" stroke="#7992a6" stroke-width="3" opacity=".55"/><path d="M458 405v48" stroke="#7992a6" stroke-width="3" opacity=".55"/><path d="M478 405v48" stroke="#7992a6" stroke-width="3" opacity=".55"/><path d="M498 405v48" stroke="#7992a6" stroke-width="3" opacity=".55"/>
+${Array.from({length:8},(_,i)=>`<path d="M${358+i*20} 405v48" stroke="#7992a6" stroke-width="3" opacity=".55"/>`).join('')}
 <rect x="372" y="439" width="30" height="9" rx="2" fill="#192f43"/><rect x="410" y="441" width="19" height="9" rx="2" fill="#192f43"/>
 <circle cx="502" cy="445" r="3" fill="#71c8ae"/>
 <!-- A recognizable Avia-inspired silver housing with its large green window. -->
@@ -32,12 +44,12 @@
 <path d="M411 274q0-9 10-8l101 5q9 0 9 10v95q0 10-10 9l-100-5q-10 0-10-10z" fill="url(#unit-window)" stroke="#366d70" stroke-width="2.5"/>
 <path d="M418 273l107 5M418 280v85" fill="none" stroke="#d3fff1" stroke-width="2" opacity=".5"/>
 <path d="M421 355l93-63" stroke="#b0f3df" stroke-width="18" opacity=".09"/>
-<path d="M551 267l43-17v5l-43 17z" fill="#536577"/><path d="M551 267l43-17" stroke="#f5f8fb" stroke-width="2"/><path d="M551 280l43-17v5l-43 17z" fill="#536577"/><path d="M551 280l43-17" stroke="#f5f8fb" stroke-width="2"/><path d="M551 293l43-17v5l-43 17z" fill="#536577"/><path d="M551 293l43-17" stroke="#f5f8fb" stroke-width="2"/><path d="M551 306l43-17v5l-43 17z" fill="#536577"/><path d="M551 306l43-17" stroke="#f5f8fb" stroke-width="2"/><path d="M551 319l43-17v5l-43 17z" fill="#536577"/><path d="M551 319l43-17" stroke="#f5f8fb" stroke-width="2"/><path d="M551 332l43-17v5l-43 17z" fill="#536577"/><path d="M551 332l43-17" stroke="#f5f8fb" stroke-width="2"/><path d="M551 345l43-17v5l-43 17z" fill="#536577"/><path d="M551 345l43-17" stroke="#f5f8fb" stroke-width="2"/><path d="M551 358l43-17v5l-43 17z" fill="#536577"/><path d="M551 358l43-17" stroke="#f5f8fb" stroke-width="2"/><path d="M551 371l43-17v5l-43 17z" fill="#536577"/><path d="M551 371l43-17" stroke="#f5f8fb" stroke-width="2"/>
+${fins}
 <path d="M592 323l18-7v29l-18 8z" fill="#4c6274" stroke="#9faebb"/>
 <path d="M610 322l19 3v19l-19-1z" fill="#a8b7c4" stroke="#566d80"/>
 <ellipse cx="630" cy="334" rx="5" ry="10" fill="#203c50" stroke="#c2ccd5" stroke-width="2"/>
 <path d="M615 325v18m4-17v18m4-17v17" stroke="#60788b" stroke-width="2"/>
-<g fill="#708799"><circle cx="408" cy="252" r="2.5"/><circle cx="534" cy="258" r="2.5"/><circle cx="408" cy="389" r="2.5"/><circle cx="534" cy="396" r="2.5"/></g>
+<g fill="#708799">${[[408,252],[534,258],[408,389],[534,396]].map(([x,y])=>`<circle cx="${x}" cy="${y}" r="2.5"/>`).join('')}</g>
 <!-- Separate camera lens and mount. -->
 <path d="M297 337l25-12 67 6-23 13z" fill="#5f7c93"/>
 <path d="M366 344l23-13v57l-23 13z" fill="#1d354b"/>
@@ -56,4 +68,6 @@
 <path d="M520 310h164v-75h85"/><path d="M310 368H157"/><path d="M377 443H192v47h-35"/><path d="M546 114V66h223"/><path d="M650 501h119"/>
 </g>
 <g fill="#6e88a0"><circle cx="520" cy="310" r="3"/><circle cx="310" cy="368" r="3"/><circle cx="377" cy="443" r="3"/><circle cx="546" cy="114" r="3"/><circle cx="650" cy="501" r="3"/></g>
-</svg>
+</svg>`;
+await writeFile(resolve(out,'protected-unit.svg'),unitDiagram);
+console.log('Created the editable protected-unit SVG with an Avia-inspired sensor.');

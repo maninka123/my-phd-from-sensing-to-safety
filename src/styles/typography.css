@@ -1,0 +1,249 @@
+/* Shared reading sizes. Keep rem tied to the reader's browser font setting. */
+:root {
+  --text-body: 1.25rem;
+  --text-caption: 1.125rem;
+  --text-control: 1.125rem;
+  --text-label: 1.125rem;
+}
+
+body { font-size: var(--text-body); line-height: 1.7; }
+
+.intro, .hero .intro, .section-heading p, .copy p, .evidence-block p,
+.method-panel p, .pipeline-list li, .dark-panel p, .scenario p,
+.extension p, .map-heading p, .map-detail p, .repo-card p,
+.dialog-body p, .detail-grid p, .academic-body p, .academic-body li,
+.paper-entry p, .boundary p, .sources li, .source-card p {
+  font-size: var(--text-body);
+  line-height: 1.7;
+}
+
+.caption, .visual-caption p, .low-light-preview figcaption,
+.source-note, .site-footer p, .footer-note {
+  font-size: var(--text-caption) !important;
+  line-height: 1.7;
+}
+
+.eyebrow, .status-label, .caption .caption-tag, .fusion-kicker,
+.brand-sub, .visual-topline, .paper-entry .paper-slot,
+.academic-nav .label, .reasoning-flow small, .dialog-head span {
+  font-size: var(--text-label);
+  line-height: 1.5;
+  letter-spacing: .055em;
+}
+
+.button, .text-link, .section-links button, .repo-chip,
+.site-header nav a, .header-profile, .repo-open, .group-tabs button,
+.filter-field input, .filter-field select, .method-tabs button,
+.academic-nav a, .footer-links a {
+  font-size: var(--text-control);
+  line-height: 1.5;
+}
+
+.caption .caption-tag { margin-bottom: .5rem; }
+.visual-caption strong { font-size: 1.4rem; line-height: 1.35; }
+.visual-caption p { max-width: 48rem; }
+.byline { flex-wrap: wrap; }
+.visual-topline { flex-wrap: wrap; letter-spacing: .04em; }
+.journey-strip a { align-items: baseline; }
+.journey-strip b { overflow-wrap: anywhere; }
+.fusion-kicker { letter-spacing: .025em; }
+.fusion-card h3 { font-size: 1.3rem; }
+.fusion-card p { font-size: var(--text-body); }
+.reasoning-flow p, .connection-item span, .chapter-list small {
+  font-size: var(--text-caption);
+  line-height: 1.65;
+}
+.reasoning-flow strong, .mini-points strong, .pipeline-list strong,
+.chapter-list strong { font-size: 1.125rem; line-height: 1.4; }
+.mini-points { flex-wrap: wrap; }
+.mini-points div { min-width: 10rem; }
+.pipeline-list li { padding-left: 3rem; }
+.pipeline-list li::before { width: 2rem; height: 2rem; font-size:1.125rem; }
+.pipeline-list li:not(:last-child)::after { left: 1rem; top: 2.2rem; }
+.evidence-numbers { flex-wrap: wrap; }
+.repo-meta, .repo-count, .filter-field label, .map-output,
+.connection-item strong, .map-alt, .legend { line-height: 1.6; }
+.repo-chip, .exact-name { overflow-wrap: anywhere; }
+.repo-chip { max-width: 100%; }
+.repo-open { gap: 1rem; align-items: baseline; }
+.stage-node { min-width: 0; height: auto; }
+.stage-node small { display: block; line-height: 1.6; }
+.filters { grid-template-columns: minmax(0,1.5fr) minmax(0,1fr) minmax(0,1fr); }
+.filter-field { min-width: 0; }
+.filter-field input, .filter-field select { min-height: 3rem; }
+.detail-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.detail-grid > div { min-width: 0; overflow-wrap: anywhere; }
+.close-button { flex-shrink: 0; width: 2.75rem; height: 2.75rem; }
+table { font-size: var(--text-caption); line-height: 1.7; }
+.academic-nav { top: 8.5rem; }
+.academic-nav a { overflow-wrap: anywhere; }
+.paper-entry .paper-status { font-size: var(--text-caption); }
+.site-footer { grid-template-columns: minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr); }
+
+/* Diagram labels stay in HTML so resizing a drawing cannot shrink the type. */
+.method-picture:not(.method-picture-evidence) {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: .75rem;
+}
+.method-graphic { width: 100%; }
+.method-graphic > svg { width: 100%; height: auto; aspect-ratio: 5 / 3; }
+.diagram-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: var(--text-label);
+  line-height: 1.5;
+}
+.diagram-key li { font-size: inherit; }
+.diagram-key li::before { content: ""; display: inline-block; width: .45rem; height: .45rem; margin-right: .5rem; border-radius: 50%; background: currentColor; }
+.method-picture .diagram-key { color: var(--muted); }
+.visual-caption .diagram-key { width: 100%; color: #d0def0; }
+.device-visual .diagram-key { color: var(--ink); margin: .75rem .5rem .25rem; }
+.interface-body { grid-template-columns: minmax(9rem,1fr) minmax(0,2fr); }
+.interface-toolbar { flex-wrap: wrap; gap: .5rem; }
+.interface-sidebar { line-height: 1.5; }
+.relationship-graph { display: grid; justify-items: center; gap: .75rem; }
+.relationship-node { padding: .8rem 1rem; border: 1px solid #b5a5d0; border-radius: .85rem; background: white; color: #584578; font-size:1.125rem; line-height: 1.4; }
+.relationship-context, .relationship-rule { background: #ded3ee; }
+.relationship-pair { display: grid; width: 100%; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr); align-items: center; gap: .6rem; text-align: center; }
+.relationship-pair .relationship-node { padding-inline: .5rem; overflow-wrap: anywhere; }
+.relationship-edge { font-size:1.125rem; color: #665080; }
+.relationship-edge span { display: block; }
+.relationship-link { width: 1px; height: 1rem; background: #a996c6; }
+
+@media (max-width: 1000px) {
+  .site-header { flex-wrap: wrap; }
+  .site-header nav { margin-left: auto; }
+  .interface-body { grid-template-columns: 1fr; }
+  .interface-sidebar { display: flex; flex-wrap: wrap; gap: .4rem 1rem; }
+  .interface-sidebar span { padding: .25rem 0; }
+  .filters { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .filter-field:first-child { grid-column: 1 / -1; }
+}
+
+@media (max-width: 700px) {
+  :root { --text-body: 1.125rem; }
+  .site-header { gap: .75rem; }
+  .brand { font-size: 1.125rem; white-space: normal; }
+  .brand-sub { font-size:1.125rem; letter-spacing: .035em; }
+  .site-header nav { margin-left: 0; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: .25rem; }
+  .site-header nav a { white-space: normal; padding: .5rem .25rem; min-height: 3.25rem; display: grid; place-items: center; line-height: 1.35; border-radius: 1rem; }
+  html { scroll-padding-top: 12rem; }
+  .visual-topline { font-size:1.125rem; }
+  .visual-caption strong { font-size: 1.25rem; }
+  .journey-strip { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .section-heading p { margin-top: 0; }
+  .stage-map { gap: .85rem; }
+  .stage-node { padding: .9rem; }
+  .stage-node strong { font-size: 1.125rem; }
+  .filters { grid-template-columns: 1fr; }
+  .filter-field:first-child { grid-column: auto; }
+  .academic-nav { gap: .5rem 1rem; }
+  .catalogue-heading { flex-wrap: wrap; gap: .5rem; }
+  .repo-count { text-align: left; }
+  .site-footer { grid-template-columns: 1fr; }
+  .low-light-preview figcaption { font-size:1.125rem; }
+  .dialog-body { padding: 1.25rem; }
+}
+
+@media (max-width: 420px) {
+  .detail-grid { grid-template-columns: 1fr; }
+  .reasoning-flow { grid-template-columns: 1fr; }
+  .reasoning-flow div::after { display: none; }
+  .stage-map { grid-template-columns: 1fr; }
+  .filters { grid-template-columns: 1fr; }
+  .filter-field:first-child { grid-column: auto; }
+  .relationship-pair { grid-template-columns: 1fr; }
+  .relationship-edge span { transform: rotate(90deg); }
+}
+
+@media print {
+  .site-header, .site-footer { display: none; }
+}
+
+/* Tool exploration needs a larger reading scale than compact figure credits. */
+:root {
+  --text-tools-body: 1.25rem;
+  --text-tools-label: 1.125rem;
+  --text-tools-title: 1.5rem;
+}
+.tools-page { font-size: var(--text-tools-body); }
+.tools-page .intro, .tools-page .map-heading p, .tools-page .map-detail p,
+.tools-page .repo-card p, .dialog-body p, .dialog-body .detail-grid p {
+  font-size: var(--text-tools-body);
+  line-height: 1.65;
+}
+.tools-page .eyebrow, .tools-page .filter-field label, .tools-page .filter-field input,
+.tools-page .filter-field select, .tools-page .group-tabs button,
+.tools-page .repo-meta, .tools-page .repo-count, .tools-page .repo-open,
+.tools-page .repo-chip, .tools-page .section-links button,
+.tools-page .text-link, .tools-page .map-output, .tools-page .legend,
+.tools-page .map-alt, .tools-page .node-num, .tools-page .stage-node small,
+.tools-page .connection-item strong, .tools-page .connection-item span,
+.dialog-head span, .dialog-body .exact-name, .dialog-body .repo-chip,
+.dialog-body .connection-item strong, .dialog-body .connection-item span,
+.dialog-body .paper-links, .dialog-body .paper-links a,
+.dialog-body .button, .dialog-body .text-link {
+  font-size: var(--text-tools-label);
+  line-height: 1.55;
+}
+.tools-page .repo-card h3 { font-size: var(--text-tools-title); line-height: 1.3; }
+.tools-page .repo-card { min-height: 0; }
+.tools-page .repo-meta { color: #4b5d73; padding-top: 1.25rem; }
+.tools-page .repo-open { min-height: 3.25rem; align-items: center; }
+.tools-page .filter-field label { color: #42536b; margin-bottom: .6rem; }
+.tools-page .filter-field input, .tools-page .filter-field select { min-height: 3.5rem; }
+.tools-page .filter-field input::placeholder { color: #596b81; opacity: 1; }
+.tools-page .group-tabs { gap: .65rem; }
+.tools-page .group-tabs button { min-height: 3rem; padding: .6rem 1rem; }
+.tools-page .stage-node strong { font-size: 1.375rem; line-height: 1.3; }
+.dialog-body { font-size: var(--text-tools-body); }
+.dialog-body h3, .dialog-body .detail-grid h3 { font-size: 1.375rem; line-height: 1.4; }
+.dialog-body .source-note, .dialog-body .caption {
+  font-size: var(--text-tools-label) !important;
+  line-height: 1.7;
+}
+@media (max-width: 700px) {
+  :root { --text-tools-body: 1.125rem; --text-tools-title: 1.375rem; }
+  .tools-page .repo-card { padding: 1.3rem; }
+  .tools-page .filter-field select { padding-right: 2rem; }
+  .tools-page .repo-open { min-height: 3rem; }
+}
+
+/* Paper entries and identity stay readable at the same scale as the story. */
+.paper-entry h3 { font-size: 1.5rem; line-height: 1.35; }
+.paper-entry p { font-size: var(--text-body); line-height: 1.7; overflow-wrap: anywhere; }
+.paper-entry .paper-slot, .paper-entry .paper-status { font-size: 1.125rem; line-height: 1.6; }
+.paper-entry .paper-slot { letter-spacing: .045em; }
+.paper-entry .repo-chip, .paper-entry .text-link { font-size: 1.125rem; line-height: 1.6; }
+.byline { font-size: 1.25rem; line-height: 1.6; color: #4b5d73; }
+.academic-nav a, .academic-nav .label { font-size: 1.125rem; line-height: 1.55; }
+.chapter-list small, .chapter-list .ch { font-size: 1.125rem; line-height: 1.65; }
+.chapter-list strong { font-size: 1.25rem; line-height: 1.4; }
+.boundary h3 { font-size: 1.375rem; }
+@media (max-width: 700px) {
+  .paper-entry h3 { font-size: 1.375rem; }
+  .byline { font-size: 1.125rem; }
+}
+.header-meta { display: flex; flex-direction: column; align-items: flex-end; gap: .25rem; flex-shrink: 0; }
+.header-meta .header-profile { display: inline-flex; gap: .35rem; align-items: center; }
+.header-updated { font-size: 1.125rem; line-height: 1.5; color: var(--muted); margin: 0; }
+.header-updated time { font-weight: 600; color: var(--ink); white-space: nowrap; }
+@media (max-width: 1100px) and (min-width: 701px) {
+  .site-header { display: grid; grid-template-columns: 1fr auto; gap: .75rem 1rem; }
+  .site-header nav { grid-column: 1 / -1; grid-row: 2; margin: 0; justify-self: center; }
+  html { scroll-padding-top: 11rem; }
+  .academic-nav { top: 11rem; }
+}
+@media (max-width: 700px) {
+  .header-meta { width: 100%; flex-direction: row; align-items: center; justify-content: space-between; gap: 1rem; }
+  .header-updated { text-align: right; }
+  .header-updated span { display: block; }
+  html { scroll-padding-top: 16rem; }
+}

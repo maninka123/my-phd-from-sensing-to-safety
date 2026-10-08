@@ -17,28 +17,12 @@ window.REPOSITORY_STATUS = {
     "readme": "https://github.com/maninka123/enclosure-aware-lidar-correction/blob/main/README.md",
     "demo": "https://maninka123.github.io/enclosure-aware-lidar-correction/"
   },
-  "lidar-enclosure-geometry": {
-    "public": true,
-    "access": "Publicly accessible",
-    "reviewDate": "2026-10-08",
-    "licence": "No licence detected; reuse terms unverified",
-    "readme": "https://github.com/maninka123/lidar-enclosure-geometry/blob/main/README.md",
-    "demo": null
-  },
   "livox-avia-camera-timing": {
     "public": true,
     "access": "Publicly accessible",
     "reviewDate": "2026-10-08",
     "licence": "No licence detected; reuse terms unverified",
     "readme": "https://github.com/maninka123/livox-avia-camera-timing/blob/main/README.md",
-    "demo": null
-  },
-  "livox-flywheel-calib-sim": {
-    "public": true,
-    "access": "Publicly accessible",
-    "reviewDate": "2026-10-08",
-    "licence": "No licence detected; reuse terms unverified",
-    "readme": "https://github.com/maninka123/livox-flywheel-calib-sim/blob/main/README.md",
     "demo": null
   },
   "rotating-target-calibration-studio": {
