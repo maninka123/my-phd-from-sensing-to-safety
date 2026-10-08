@@ -30,12 +30,14 @@ screenshots, raw README snapshots and review intermediates are excluded.
 
 ## Local working copy
 
-The original authoring folder remains `Github repo summary/Research_Story_Hub`.
-The publishing checkout is `Github repo summary/Publishing/my-phd-from-sensing-to-safety`.
-Copy only the reviewed source files into that checkout, then inspect `git diff`
-and `git status` before committing and pushing. Do not copy the entire local
-working folder. `.gitignore` excludes `dist/`, verification outputs and raw
-repository snapshots.
+I use one local working folder: `Github repo summary/Research_Story_Hub`.
+It is the Git checkout connected to this repository, so I edit, preview, commit
+and push from that same folder. No separate publishing copy is needed.
+
+My local research and review material stays alongside the app but is excluded
+from Git by `.gitignore`: generated `dist/`, verification outputs, raw repository
+snapshots and source-inspection helpers. I inspect `git diff` and `git status`
+before committing and pushing reviewed changes.
 
 ## Update records
 

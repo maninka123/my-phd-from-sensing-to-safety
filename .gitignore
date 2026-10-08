@@ -4,3 +4,8 @@ verification/*
 source-records/repositories/
 node_modules/
 .DS_Store
+
+# Local source-inspection material; excluded from publication.
+/tools/assets/
+/scripts/verify-repositories.py
+/source-records/repository-documentation.md
