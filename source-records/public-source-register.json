@@ -1,0 +1,283 @@
+{
+  "review_date": "2026-10-08",
+  "content_sources": [
+    {
+      "file": "GitHub_Repository_Portfolio_Overview.docx",
+      "role": "Repository descriptions and initial visibility"
+    },
+    {
+      "file": "PhD_Thesis_Plan_Full.docx and Thesis_Skeleton.docx",
+      "role": "Seven-chapter structure, objectives, contributions and evidence limits"
+    },
+    {
+      "file": "02_Chapter_Map.md and 01_Thesis_Storyline.md",
+      "role": "Paper and chapter ownership"
+    },
+    {
+      "file": "User Guide – Central Monitoring App_v3.docx",
+      "role": "Transport definitions, operator features; application 1.0.1"
+    },
+    {
+      "url": "https://research.unsw.edu.au/people/professor-simit-raval/publications",
+      "role": "Updated safety journal citation"
+    },
+    {
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7513129",
+      "role": "Rotating-target preprint and author list"
+    },
+    {
+      "url": "https://arxiv.org/abs/2605.02516",
+      "role": "Hardware earlier-title/version check"
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.03460",
+      "role": "Safety earlier-title/version check"
+    }
+  ],
+  "repositories": [
+    {
+      "name": "single-shot-lidar-camera-calibration",
+      "url": "https://github.com/maninka123/single-shot-lidar-camera-calibration",
+      "access": "Publicly accessible",
+      "summary_visibility": "Public",
+      "licence": "MIT",
+      "licence_url": "https://github.com/maninka123/single-shot-lidar-camera-calibration/blob/main/LICENSE",
+      "readme_url": "https://github.com/maninka123/single-shot-lidar-camera-calibration/blob/main/README.md",
+      "demo": null,
+      "readme_sha": "3338b65317f3468be2fe8a5b5f9b8284387cb80c"
+    },
+    {
+      "name": "enclosure-aware-lidar-correction",
+      "url": "https://github.com/maninka123/enclosure-aware-lidar-correction",
+      "access": "Publicly accessible",
+      "summary_visibility": "Public",
+      "licence": "MIT",
+      "licence_url": "https://github.com/maninka123/enclosure-aware-lidar-correction/blob/main/LICENSE",
+      "readme_url": "https://github.com/maninka123/enclosure-aware-lidar-correction/blob/main/README.md",
+      "demo": "https://maninka123.github.io/enclosure-aware-lidar-correction/",
+      "readme_sha": "46e2d515a74d9d29bc8fd4940cb17a6cc8ae7f7a"
+    },
+    {
+      "name": "lidar-enclosure-geometry",
+      "url": "https://github.com/maninka123/lidar-enclosure-geometry",
+      "access": "Publicly accessible",
+      "summary_visibility": "Public",
+      "licence": "No licence detected; reuse terms unverified",
+      "readme_url": "https://github.com/maninka123/lidar-enclosure-geometry/blob/main/README.md",
+      "demo": null,
+      "readme_sha": "72e342a7edcbeed905ae7c3d2a149b50761aa41e"
+    },
+    {
+      "name": "livox-avia-camera-timing",
+      "url": "https://github.com/maninka123/livox-avia-camera-timing",
+      "access": "Publicly accessible",
+      "summary_visibility": "Public",
+      "licence": "No licence detected; reuse terms unverified",
+      "readme_url": "https://github.com/maninka123/livox-avia-camera-timing/blob/main/README.md",
+      "demo": null,
+      "readme_sha": "6acf2a95a6bb3a6e6c175ef6149386c00c4f141c"
+    },
+    {
+      "name": "livox-flywheel-calib-sim",
+      "url": "https://github.com/maninka123/livox-flywheel-calib-sim",
+      "access": "Publicly accessible",
+      "summary_visibility": "Public",
+      "licence": "No licence detected; reuse terms unverified",
+      "readme_url": "https://github.com/maninka123/livox-flywheel-calib-sim/blob/main/README.md",
+      "demo": null,
+      "readme_sha": "b2e613f7b74528edd2a02f1cd7456fb611dbb2c8"
+    },
+    {
+      "name": "rotating-target-calibration-studio",
+      "url": "https://github.com/maninka123/rotating-target-calibration-studio",
+      "access": "Publicly accessible",
+      "summary_visibility": "Public",
+      "licence": "MIT",
+      "licence_url": "https://github.com/maninka123/rotating-target-calibration-studio/blob/main/LICENSE",
+      "readme_url": "https://github.com/maninka123/rotating-target-calibration-studio/blob/main/README.md",
+      "demo": "https://maninka123.github.io/rotating-target-calibration-studio/",
+      "readme_sha": "be49a8b7a900bdbbffac39e28767444112852d44"
+    },
+    {
+      "name": "Sensor_Computer",
+      "url": "https://github.com/maninka123/Sensor_Computer",
+      "access": "Publicly accessible",
+      "summary_visibility": "Public",
+      "licence": "UNSW proprietary",
+      "licence_url": "https://github.com/maninka123/Sensor_Computer/blob/master/LICENSE",
+      "readme_url": "https://github.com/maninka123/Sensor_Computer/blob/master/README.md",
+      "demo": "",
+      "readme_sha": "53150d4c6a1365e61b09ea5d33a78ca09357e7f6"
+    },
+    {
+      "name": "Lidar_camera_FOV_analysis",
+      "url": "https://github.com/maninka123/Lidar_camera_FOV_analysis",
+      "access": "Not publicly accessible in initial anonymous checks",
+      "summary_visibility": "Private",
+      "licence": "Unverified; repository not publicly accessible"
+    },
+    {
+      "name": "Multi_device_reconstruction-pose_graph",
+      "url": "https://github.com/maninka123/Multi_device_reconstruction-pose_graph",
+      "access": "Not publicly accessible in initial anonymous checks",
+      "summary_visibility": "Private",
+      "licence": "Unverified; repository not publicly accessible"
+    },
+    {
+      "name": "Central_Monitoring_Platform",
+      "url": "https://github.com/maninka123/Central_Monitoring_Platform",
+      "access": "Not publicly accessible in initial anonymous checks",
+      "summary_visibility": "Private",
+      "licence": "Unverified; repository not publicly accessible"
+    },
+    {
+      "name": "3D_monitoring_device_simulation_underground",
+      "url": "https://github.com/maninka123/3D_monitoring_device_simulation_underground",
+      "access": "Not publicly accessible in initial anonymous checks",
+      "summary_visibility": "Private",
+      "licence": "Unverified; repository not publicly accessible"
+    },
+    {
+      "name": "Scene-Graph_Mine-Safety",
+      "url": "https://github.com/maninka123/Scene-Graph_Mine-Safety",
+      "access": "Publicly accessible",
+      "summary_visibility": "Public",
+      "licence": "No licence detected; reuse terms unverified",
+      "readme_url": "https://github.com/maninka123/Scene-Graph_Mine-Safety/blob/main/README.md",
+      "readme_sha": "ce7700a1ea404d4b584875bdc9480fe57ea18d6c"
+    },
+    {
+      "name": "Creep_Monitoring",
+      "url": "https://github.com/maninka123/Creep_Monitoring",
+      "access": "Not publicly accessible in initial anonymous checks",
+      "summary_visibility": "Private",
+      "licence": "Unverified; repository not publicly accessible"
+    },
+    {
+      "name": "Dynamic_Object_Detection",
+      "url": "https://github.com/maninka123/Dynamic_Object_Detection",
+      "access": "Not publicly accessible in initial anonymous checks",
+      "summary_visibility": "Private",
+      "licence": "Unverified; repository not publicly accessible"
+    },
+    {
+      "name": "Meshing_toolkit",
+      "url": "https://github.com/maninka123/Meshing_toolkit",
+      "access": "Publicly accessible",
+      "summary_visibility": "Public",
+      "licence": "No licence detected; reuse terms unverified",
+      "readme_url": "https://github.com/maninka123/Meshing_toolkit/blob/main/README.md",
+      "readme_sha": "8befad488531a158e799a5766c2ec815bf04d14b"
+    }
+  ],
+  "assets": [
+    {
+      "id": "multi-camera-prototype",
+      "path": "public/assets/evidence/multi-camera-prototype.png",
+      "source_file": "Journal Publications\\sensors-25-06582-v2_Published.pdf",
+      "source_location": "Figure 1, PDF page 5",
+      "caption": "Four-camera LiDAR prototype on a trolley. Published experimental hardware; distinct from the flameproof mine device.",
+      "original_caption": "Figure 1. Prototype hardware setup on a trolley: Four cameras mounted around the Velodyne Puck\nHi‑Res LiDAR, LiDAR interface box, Intel NUC for data processing and Anker 737 Power Bank for\npower supply.",
+      "attribution": "Ranasinghe, Patra, Banerjee and Raval (2025), Sensors 25, 6582, Figure 1. CC BY 4.0. Figure area extracted from published PDF; panels and caption retained.",
+      "source_url": "https://doi.org/10.3390/s25216582",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "reuse_status": "verified-open-license",
+      "display_permission": "public-and-private",
+      "change_note": "Page cropped to complete figure area; no panel or research result edited."
+    },
+    {
+      "id": "registration-validation",
+      "path": "public/assets/evidence/registration-validation.png",
+      "source_file": "Journal Publications\\sensors-25-06582-v2_Published.pdf",
+      "source_location": "Figure 8, PDF page 16",
+      "caption": "Alignment of LiDAR and SfM point clouds with checkerboard projection validation.",
+      "original_caption": "Figure 8. (a) Results of the point cloud registration process: Alignment of the LiDAR points with\nthe SfM‑generated point cloud. The correspondence score for each object is indicated below the\nrespective object, representing the percentage of LiDAR points that found matches in the SfM recon‑\nstruction. (b) Validation of the transformation matrix by projecting LiDAR points onto a checker‑\nboard plane.",
+      "attribution": "Ranasinghe, Patra, Banerjee and Raval (2025), Sensors 25, 6582, Figure 8. CC BY 4.0. Figure area extracted from published PDF; panels and caption retained.",
+      "source_url": "https://doi.org/10.3390/s25216582",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "reuse_status": "verified-open-license",
+      "display_permission": "public-and-private",
+      "change_note": "Page cropped to complete figure area; no panel or research result edited."
+    },
+    {
+      "id": "low-light-comparison",
+      "path": "public/assets/evidence/low-light-comparison.png",
+      "source_file": "Journal Publications\\sensors-25-06582-v2_Published.pdf",
+      "source_location": "Figure 9, PDF page 17",
+      "caption": "Raw, enhanced, and temporally smoothed images at 1 lux. All four frames and all three result rows are retained.",
+      "original_caption": "Figure 9. Results of low‑light image enhancement on a sequence of images taken at a light level\nof 1 lux: displayed for frames 1, 120, 203, and 320. (a) Raw input image set, (b) Images after low‑\nlight enhancement process, (c) Output after temporal smoothing, with nearly uniform colours across\nthe frames.",
+      "attribution": "Ranasinghe, Patra, Banerjee and Raval (2025), Sensors 25, 6582, Figure 9. CC BY 4.0. Figure area extracted from published PDF; panels and caption retained.",
+      "source_url": "https://doi.org/10.3390/s25216582",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "reuse_status": "verified-open-license",
+      "display_permission": "public-and-private",
+      "change_note": "Page cropped to complete figure area; no panel or research result edited."
+    },
+    {
+      "id": "colourised-reconstruction",
+      "path": "public/assets/evidence/colourised-reconstruction.png",
+      "source_file": "Journal Publications\\sensors-25-06582-v2_Published.pdf",
+      "source_location": "Figure 10, PDF page 18",
+      "caption": "SLAM reconstruction comparing dark, well-lit, and enhanced dark captures. All camera-contribution regions and comparison panels are retained.",
+      "original_caption": "Figure 10. SLAM‑based 3D reconstruction with colour‑coded camera contributions and patch‑wise\nvisual comparison of (a,b) correspond to the DARK and LIGHT datasets without low‑light enhance‑\nment, and (c) corresponds to the DARK dataset with low‑light enhancement applied.",
+      "attribution": "Ranasinghe, Patra, Banerjee and Raval (2025), Sensors 25, 6582, Figure 10. CC BY 4.0. Figure area extracted from published PDF; panels and caption retained.",
+      "source_url": "https://doi.org/10.3390/s25216582",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "reuse_status": "verified-open-license",
+      "display_permission": "public-and-private",
+      "change_note": "Page cropped to complete figure area; no panel or research result edited."
+    },
+    {
+      "id": "rotating-target-studio",
+      "path": "public/assets/evidence/rotating-target-studio.png",
+      "source_file": "Public GitHub repository maninka123/rotating-target-calibration-studio, docs/rotation-view.png",
+      "source_location": "README Sensor architectures section: Face-on rotation view",
+      "caption": "Face-on rotating apertured-target simulation in Rotating Target Calibration Studio. Noise-free exploration of scan architectures and angle recovery; not measured physical timing accuracy.",
+      "attribution": "Copyright (c) 2026 Pasindu Ranasinghe, School of Minerals and Energy Resources Engineering, UNSW Sydney, Australia. MIT License.",
+      "source_url": "https://github.com/maninka123/rotating-target-calibration-studio/blob/main/docs/rotation-view.png",
+      "raw_source_url": "https://raw.githubusercontent.com/maninka123/rotating-target-calibration-studio/main/docs/rotation-view.png",
+      "readme_url": "https://github.com/maninka123/rotating-target-calibration-studio/blob/main/README.md",
+      "license": "https://raw.githubusercontent.com/maninka123/rotating-target-calibration-studio/main/LICENSE",
+      "license_local_file": "source-records/repositories/rotating-target-calibration-studio/LICENSE",
+      "license_notice_path": "/assets/evidence/rotating-target-studio.LICENSE.txt",
+      "reuse_status": "verified-open-license",
+      "display_permission": "public-and-private",
+      "change_note": "Downloaded original PNG unchanged. Complete MIT copyright and permission notice retained alongside the public image.",
+      "readme_context": "Standalone browser tool for rotating-target geometry, LiDAR/camera architectures, angle estimation and timestamp conventions. README scope states a noise-free scene excluding range noise, classification error, boundary blur and radiometric effects; accuracy is an optimistic bound, not measured hardware performance.",
+      "citation": "Ranasinghe, P., Patra, D., Banerjee, B. P., and Raval, S. (2026). A Rotating Aperture Target with a Common Geometric Estimator for Temporal Calibration of Heterogeneous Sensors. SSRN preprint. doi:10.2139/ssrn.7513129.",
+      "dimensions": [
+        520,
+        489
+      ],
+      "sha256": "984ca2cb15e149224ec23454b652cc74b2f2482af6b7872a1132c5469c3cb96f",
+      "verified_on": "2026-10-08"
+    },
+    {
+      "path": "public/assets/diagrams/longwall-story.svg",
+      "caption": "Longwall monitoring context",
+      "source": "Original hub SVG schematic based on supplied research concepts",
+      "attribution": "Created for Pasindu Ranasinghe’s Research Story Hub",
+      "reuse_status": "Original explanatory artwork; not measured research data"
+    },
+    {
+      "path": "public/assets/diagrams/protected-unit.svg",
+      "caption": "Protected unit architecture",
+      "source": "Original hub SVG schematic based on supplied research concepts",
+      "attribution": "Created for Pasindu Ranasinghe’s Research Story Hub",
+      "reuse_status": "Original explanatory artwork; not measured research data"
+    },
+    {
+      "path": "public/assets/diagrams/favicon.svg",
+      "caption": "Research hub icon",
+      "source": "Original hub SVG schematic based on supplied research concepts",
+      "attribution": "Created for Pasindu Ranasinghe’s Research Story Hub",
+      "reuse_status": "Original explanatory artwork; not measured research data"
+    }
+  ],
+  "gaps": [
+    "Six repository contents unavailable anonymously; summary-recorded private status is not independently confirmed.",
+    "Current unpublished manuscript statuses, author contribution statements and fixed examination archives unverified.",
+    "Private screenshots, partner images, confidential mine data and unresolved-reuse images excluded.",
+    "No complete acquisition-to-reasoning active-face trial established."
+  ]
+}

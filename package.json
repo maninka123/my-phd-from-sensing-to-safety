@@ -1,0 +1,12 @@
+{
+  "name": "research-story-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A static research exhibition connecting underground LiDAR–camera sensing tools.",
+  "scripts": {
+    "dev": "node scripts/preview.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

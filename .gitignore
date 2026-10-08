@@ -1,0 +1,6 @@
+dist/
+verification/*
+!verification/.gitkeep
+source-records/repositories/
+node_modules/
+.DS_Store

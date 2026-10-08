@@ -1,0 +1,564 @@
+{
+  "review_date": "2026-10-08",
+  "method": "Unauthenticated GitHub repository, README and licence APIs; no credentials accessed",
+  "supplied_summary": "../GitHub_Repository_Portfolio_Overview.docx",
+  "repositories": [
+    {
+      "name": "single-shot-lidar-camera-calibration",
+      "url": "https://github.com/maninka123/single-shot-lidar-camera-calibration",
+      "api_url": "https://api.github.com/repos/maninka123/single-shot-lidar-camera-calibration",
+      "review_date": "2026-10-08",
+      "summary_visibility": "Public",
+      "anonymous_api_status": 200,
+      "access": "Publicly accessible",
+      "visibility": "public",
+      "primary_language": "Python",
+      "description": "Code and supporting files for an automated single-shot LiDAR–camera extrinsic calibration method using image processing, presented at IEEE IGARSS 2025.",
+      "default_branch": "main",
+      "homepage": null,
+      "archived": false,
+      "last_push": "2026-09-29T14:08:55Z",
+      "licence": {
+        "status": "Detected by GitHub; inspect licence terms",
+        "spdx_id": "MIT",
+        "name": "MIT License",
+        "api_url": "https://api.github.com/licenses/mit",
+        "file_url": "https://github.com/maninka123/single-shot-lidar-camera-calibration/blob/main/LICENSE",
+        "file_name": "LICENSE",
+        "opening_lines": [
+          "MIT License",
+          "",
+          "Copyright (c) 2026 Pasindu Ranasinghe",
+          "",
+          "Permission is hereby granted, free of charge, to any person obtaining a copy",
+          "of this software and associated documentation files (the \"Software\"), to deal",
+          "in the Software without restriction, including without limitation the rights",
+          "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",
+          "copies of the Software, and to permit persons to whom the Software is",
+          "furnished to do so, subject to the following conditions:",
+          "",
+          "The above copyright notice and this permission notice shall be included in all",
+          "copies or substantial portions of the Software.",
+          "",
+          "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR",
+          "IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,"
+        ],
+        "sha": "9d338af2e5b5bf6f12ea2dc687e9864bc8322390",
+        "documented_terms": "MIT text in repository LICENSE; third-party and paper rights remain separate",
+        "classification": "MIT"
+      },
+      "readme": {
+        "url": "https://github.com/maninka123/single-shot-lidar-camera-calibration/blob/main/README.md",
+        "raw_url": "https://raw.githubusercontent.com/maninka123/single-shot-lidar-camera-calibration/main/README.md",
+        "sha": "3338b65317f3468be2fe8a5b5f9b8284387cb80c",
+        "local_file": "source-records/repositories/single-shot-lidar-camera-calibration/README.md",
+        "headings": [
+          "Single-Shot LiDAR-Camera Extrinsic Calibration",
+          "Method",
+          "Required input",
+          "Installation",
+          "Windows: .venv\\Scripts\\activate",
+          "Linux/macOS: source .venv/bin/activate",
+          "Configuration",
+          "Image and PCD",
+          "One ROS bag",
+          "Camera and target",
+          "Run",
+          "Automatic defaults",
+          "Output",
+          "Updates",
+          "Paper",
+          "Results",
+          "Citation",
+          "License"
+        ],
+        "external_links": [
+          "https://doi.org/10.1109/IGARSS55030.2025.11242429",
+          "https://github.com/maninka123/single-shot-lidar-camera-calibration/blob/main/CITATION.bib",
+          "https://github.com/maninka123/single-shot-lidar-camera-calibration/blob/main/CITATION.cff",
+          "https://ieeexplore.ieee.org/document/11242429"
+        ]
+      },
+      "initial_anonymous_api_status": 200
+    },
+    {
+      "name": "enclosure-aware-lidar-correction",
+      "url": "https://github.com/maninka123/enclosure-aware-lidar-correction",
+      "api_url": "https://api.github.com/repos/maninka123/enclosure-aware-lidar-correction",
+      "review_date": "2026-10-08",
+      "summary_visibility": "Public",
+      "anonymous_api_status": 200,
+      "access": "Publicly accessible",
+      "visibility": "public",
+      "primary_language": "JavaScript",
+      "description": "Real-time LiDAR point cloud correction for refraction caused by curved protective enclosures using ray tracing and lookup-table-based angular compensation.",
+      "default_branch": "main",
+      "homepage": "https://maninka123.github.io/enclosure-aware-lidar-correction/",
+      "archived": false,
+      "last_push": "2026-09-19T03:58:47Z",
+      "licence": {
+        "status": "Detected by GitHub; inspect licence terms",
+        "spdx_id": "MIT",
+        "name": "MIT License",
+        "api_url": "https://api.github.com/licenses/mit",
+        "file_url": "https://github.com/maninka123/enclosure-aware-lidar-correction/blob/main/LICENSE",
+        "file_name": "LICENSE",
+        "opening_lines": [
+          "MIT License",
+          "",
+          "Copyright (c) 2026 Pasindu Ranasinghe",
+          "",
+          "Permission is hereby granted, free of charge, to any person obtaining a copy",
+          "of this software and associated documentation files (the \"Software\"), to deal",
+          "in the Software without restriction, including without limitation the rights",
+          "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",
+          "copies of the Software, and to permit persons to whom the Software is",
+          "furnished to do so, subject to the following conditions:",
+          "",
+          "The above copyright notice and this permission notice shall be included in all",
+          "copies or substantial portions of the Software.",
+          "",
+          "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR",
+          "IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,"
+        ],
+        "sha": "9d338af2e5b5bf6f12ea2dc687e9864bc8322390",
+        "documented_terms": "MIT text in repository LICENSE; third-party and paper rights remain separate",
+        "classification": "MIT"
+      },
+      "readme": {
+        "url": "https://github.com/maninka123/enclosure-aware-lidar-correction/blob/main/README.md",
+        "raw_url": "https://raw.githubusercontent.com/maninka123/enclosure-aware-lidar-correction/main/README.md",
+        "sha": "46e2d515a74d9d29bc8fd4940cb17a6cc8ae7f7a",
+        "local_file": "source-records/repositories/enclosure-aware-lidar-correction/README.md",
+        "headings": [
+          "Enclosure-aware LiDAR correction",
+          "Interactive app",
+          "Install and run",
+          "Correct a point cloud",
+          "Use LUT correction",
+          "Python API",
+          "Repository layout",
+          "Citation",
+          "License",
+          "Tested environment"
+        ],
+        "external_links": [
+          "https://doi.org/10.1016/j.measurement.2026.122285",
+          "https://github.com/maninka123/enclosure-aware-lidar-correction.git",
+          "https://img.shields.io/badge/Cite-this%20work-green",
+          "https://img.shields.io/badge/DOI-10.1016%2Fj.measurement.2026.122285-blue",
+          "https://img.shields.io/badge/Web_app-Enclosure_Lab-087f83",
+          "https://maninka123.github.io/enclosure-aware-lidar-correction/",
+          "https://www.sciencedirect.com/science/article/pii/S0263224126019949",
+          "https://www.sciencedirect.com/science/article/pii/S0263224126019949}"
+        ]
+      },
+      "demo_check": {
+        "url": "https://maninka123.github.io/enclosure-aware-lidar-correction/",
+        "anonymous_status": 200,
+        "note": "Reachability only; functional operation not tested here"
+      },
+      "initial_anonymous_api_status": 200
+    },
+    {
+      "name": "lidar-enclosure-geometry",
+      "url": "https://github.com/maninka123/lidar-enclosure-geometry",
+      "api_url": "https://api.github.com/repos/maninka123/lidar-enclosure-geometry",
+      "review_date": "2026-10-08",
+      "summary_visibility": "Public",
+      "anonymous_api_status": 200,
+      "access": "Publicly accessible",
+      "visibility": "public",
+      "primary_language": "Python",
+      "description": "Reproducible comparison of enclosure-off/on LiDAR point clouds, with geometric distances, scan repeatability baselines, and verified results.",
+      "default_branch": "main",
+      "homepage": null,
+      "archived": false,
+      "last_push": "2026-10-07T10:50:44Z",
+      "licence": {
+        "status": "No licence detected by GitHub; public visibility does not grant reuse permission",
+        "anonymous_licence_status": 404,
+        "classification": "No licence detected; reuse terms unverified"
+      },
+      "readme": {
+        "url": "https://github.com/maninka123/lidar-enclosure-geometry/blob/main/README.md",
+        "raw_url": "https://raw.githubusercontent.com/maninka123/lidar-enclosure-geometry/main/README.md",
+        "sha": "72e342a7edcbeed905ae7c3d2a149b50761aa41e",
+        "local_file": "source-records/repositories/lidar-enclosure-geometry/README.md",
+        "headings": [
+          "LiDAR enclosure geometry",
+          "Key finding",
+          "Dataset",
+          "Get started"
+        ],
+        "external_links": [
+          "https://git-lfs.com/",
+          "https://github.com/maninka123/lidar-enclosure-geometry.git"
+        ]
+      },
+      "initial_anonymous_api_status": 200
+    },
+    {
+      "name": "livox-avia-camera-timing",
+      "url": "https://github.com/maninka123/livox-avia-camera-timing",
+      "api_url": "https://api.github.com/repos/maninka123/livox-avia-camera-timing",
+      "review_date": "2026-10-08",
+      "summary_visibility": "Public",
+      "anonymous_api_status": 200,
+      "access": "Publicly accessible",
+      "visibility": "public",
+      "primary_language": "Python",
+      "description": "Estimate relative timing offsets between Livox Avia LiDAR and camera recordings using rotating-target motion.",
+      "default_branch": "main",
+      "homepage": null,
+      "archived": false,
+      "last_push": "2026-10-08T03:45:55Z",
+      "licence": {
+        "status": "No licence detected by GitHub; public visibility does not grant reuse permission",
+        "anonymous_licence_status": 404,
+        "classification": "No licence detected; reuse terms unverified"
+      },
+      "readme": {
+        "url": "https://github.com/maninka123/livox-avia-camera-timing/blob/main/README.md",
+        "raw_url": "https://raw.githubusercontent.com/maninka123/livox-avia-camera-timing/main/README.md",
+        "sha": "6acf2a95a6bb3a6e6c175ef6149386c00c4f141c",
+        "local_file": "source-records/repositories/livox-avia-camera-timing/README.md",
+        "headings": [
+          "Livox Avia–Camera Timing Studio",
+          "Run",
+          "How it works",
+          "Included example",
+          "CLI",
+          "Papers"
+        ],
+        "external_links": [
+          "http://127.0.0.1:8765**.",
+          "https://doi.org/10.1016/j.measurement.2026.122285",
+          "https://doi.org/10.2139/ssrn.7513129",
+          "https://github.com/maninka123/livox-avia-camera-timing.git"
+        ]
+      },
+      "initial_anonymous_api_status": 200
+    },
+    {
+      "name": "livox-flywheel-calib-sim",
+      "url": "https://github.com/maninka123/livox-flywheel-calib-sim",
+      "api_url": "https://api.github.com/repos/maninka123/livox-flywheel-calib-sim",
+      "review_date": "2026-10-08",
+      "summary_visibility": "Public",
+      "anonymous_api_status": 200,
+      "access": "Publicly accessible",
+      "visibility": "public",
+      "primary_language": "Python",
+      "description": "Gazebo simulation of a Livox Avia LiDAR observing a rotating sector-cut flywheel target, used to validate the angle-estimation approach behind the flywheel-based temporal calibration method in our Measurement paper. Compares candidate target geometries in simulation before physical fabrication.",
+      "default_branch": "main",
+      "homepage": null,
+      "archived": false,
+      "last_push": "2026-08-12T10:47:36Z",
+      "licence": {
+        "status": "No licence detected by GitHub; public visibility does not grant reuse permission",
+        "anonymous_licence_status": 404,
+        "classification": "No licence detected; reuse terms unverified"
+      },
+      "readme": {
+        "url": "https://github.com/maninka123/livox-flywheel-calib-sim/blob/main/README.md",
+        "raw_url": "https://raw.githubusercontent.com/maninka123/livox-flywheel-calib-sim/main/README.md",
+        "sha": "b2e613f7b74528edd2a02f1cd7456fb611dbb2c8",
+        "local_file": "source-records/repositories/livox-flywheel-calib-sim/README.md",
+        "headings": [
+          "Livox flywheel calibration simulation",
+          "What are v1 and v2?",
+          "Same frame, different target geometry",
+          "Related paper",
+          "Requirements",
+          "Build",
+          "Run v2",
+          "Saved outputs"
+        ],
+        "external_links": [
+          "https://doi.org/10.1016/j.measurement.2026.122285",
+          "https://github.com/maninka123/livox-flywheel-calib-sim.git",
+          "https://www.sciencedirect.com/science/article/pii/S0263224126019949"
+        ]
+      },
+      "initial_anonymous_api_status": 200
+    },
+    {
+      "name": "rotating-target-calibration-studio",
+      "url": "https://github.com/maninka123/rotating-target-calibration-studio",
+      "api_url": "https://api.github.com/repos/maninka123/rotating-target-calibration-studio",
+      "review_date": "2026-10-08",
+      "summary_visibility": "Public",
+      "anonymous_api_status": 200,
+      "access": "Publicly accessible",
+      "visibility": "public",
+      "primary_language": "TypeScript",
+      "description": "Design rotating calibration targets and evaluate angle-estimation methods across LiDAR and camera sampling architectures.",
+      "default_branch": "main",
+      "homepage": "https://maninka123.github.io/rotating-target-calibration-studio/",
+      "archived": false,
+      "last_push": "2026-10-07T05:50:40Z",
+      "licence": {
+        "status": "Detected by GitHub; inspect licence terms",
+        "spdx_id": "NOASSERTION",
+        "name": "Other",
+        "api_url": null,
+        "anonymous_licence_status": 403,
+        "classification": "MIT",
+        "documented_terms": "MIT text inspected in README and LICENSE; GitHub SPDX is unresolved",
+        "file_url": "https://github.com/maninka123/rotating-target-calibration-studio/blob/main/LICENSE"
+      },
+      "readme": {
+        "url": "https://github.com/maninka123/rotating-target-calibration-studio/blob/main/README.md",
+        "raw_url": "https://raw.githubusercontent.com/maninka123/rotating-target-calibration-studio/main/README.md",
+        "sha": "be49a8b7a900bdbbffac39e28767444112852d44",
+        "local_file": "source-records/repositories/rotating-target-calibration-studio/README.md",
+        "headings": [
+          "Rotating Target Calibration Studio",
+          "Scope",
+          "What you can do",
+          "Sensor architectures",
+          "Start here",
+          "Run locally",
+          "How it works",
+          "License",
+          "Citation",
+          "Associated preprint"
+        ],
+        "external_links": [
+          "https://doi.org/10.2139/ssrn.7513129",
+          "https://maninka123.github.io/rotating-target-calibration-studio/",
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7513129",
+          "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7513129},"
+        ]
+      },
+      "demo_check": {
+        "url": "https://maninka123.github.io/rotating-target-calibration-studio/",
+        "anonymous_status": 200,
+        "note": "Reachability only; functional operation not tested here"
+      },
+      "initial_anonymous_api_status": 200
+    },
+    {
+      "name": "Sensor_Computer",
+      "url": "https://github.com/maninka123/Sensor_Computer",
+      "api_url": "https://api.github.com/repos/maninka123/Sensor_Computer",
+      "review_date": "2026-10-08",
+      "summary_visibility": "Public",
+      "anonymous_api_status": 200,
+      "access": "Publicly accessible",
+      "visibility": "public",
+      "primary_language": "C++",
+      "description": "Sensor Computer Software is a robust monitoring stack for underground mining environments. It integrates Livox LiDARs and FLIR cameras to perform real-time data acquisition, image enhancement, and 3D point cloud processing for fixed monitoring stations.",
+      "default_branch": "master",
+      "homepage": "",
+      "archived": false,
+      "last_push": "2026-09-30T09:18:16Z",
+      "licence": {
+        "status": "Detected by GitHub; inspect licence terms",
+        "spdx_id": "NOASSERTION",
+        "name": "Other",
+        "api_url": null,
+        "anonymous_licence_status": 403,
+        "classification": "UNSW proprietary",
+        "documented_terms": "README and licence text explicitly proprietary; public visibility is not an open-source grant",
+        "file_url": "https://github.com/maninka123/Sensor_Computer/blob/master/LICENSE"
+      },
+      "readme": {
+        "url": "https://github.com/maninka123/Sensor_Computer/blob/master/README.md",
+        "raw_url": "https://raw.githubusercontent.com/maninka123/Sensor_Computer/master/README.md",
+        "sha": "53150d4c6a1365e61b09ea5d33a78ca09357e7f6",
+        "local_file": "source-records/repositories/Sensor_Computer/README.md",
+        "headings": [
+          "Sensor Computer Software",
+          "System description",
+          "Key features",
+          "Repository structure",
+          "Install",
+          "Run",
+          "Start automatically at boot",
+          "Output and remote connection",
+          "Persistent network values",
+          "Second sensor unit",
+          "Live controls and diagnostics",
+          "Raw vs enhanced image",
+          "License"
+        ],
+        "external_links": [
+          "http://10.20.0.21:11311",
+          "http://10.20.0.21:11311`",
+          "https://github.com/Livox-SDK/Livox-SDK"
+        ]
+      },
+      "initial_anonymous_api_status": 200
+    },
+    {
+      "name": "Lidar_camera_FOV_analysis",
+      "url": "https://github.com/maninka123/Lidar_camera_FOV_analysis",
+      "api_url": "https://api.github.com/repos/maninka123/Lidar_camera_FOV_analysis",
+      "review_date": "2026-10-08",
+      "summary_visibility": "Private",
+      "anonymous_api_status": 404,
+      "anonymous_page_status": 404,
+      "access": "Not publicly accessible in initial anonymous checks",
+      "visibility": "Supplied summary records private; current visibility unverified",
+      "licence": {
+        "status": "Unverified; no public licence evidence retrieved",
+        "classification": "Unverified; repository not publicly accessible"
+      },
+      "readme": null,
+      "note": "A 404 can mean private, renamed, removed, or inaccessible; it does not prove private visibility.",
+      "initial_anonymous_api_status": 404,
+      "initial_anonymous_page_status": 404
+    },
+    {
+      "name": "Multi_device_reconstruction-pose_graph",
+      "url": "https://github.com/maninka123/Multi_device_reconstruction-pose_graph",
+      "api_url": "https://api.github.com/repos/maninka123/Multi_device_reconstruction-pose_graph",
+      "review_date": "2026-10-08",
+      "summary_visibility": "Private",
+      "anonymous_api_status": 404,
+      "anonymous_page_status": 404,
+      "access": "Not publicly accessible in initial anonymous checks",
+      "visibility": "Supplied summary records private; current visibility unverified",
+      "licence": {
+        "status": "Unverified; no public licence evidence retrieved",
+        "classification": "Unverified; repository not publicly accessible"
+      },
+      "readme": null,
+      "note": "A 404 can mean private, renamed, removed, or inaccessible; it does not prove private visibility.",
+      "initial_anonymous_api_status": 404,
+      "initial_anonymous_page_status": 404
+    },
+    {
+      "name": "Central_Monitoring_Platform",
+      "url": "https://github.com/maninka123/Central_Monitoring_Platform",
+      "api_url": "https://api.github.com/repos/maninka123/Central_Monitoring_Platform",
+      "review_date": "2026-10-08",
+      "summary_visibility": "Private",
+      "anonymous_api_status": 403,
+      "anonymous_page_status": 404,
+      "access": "Not publicly accessible in initial anonymous checks",
+      "visibility": "Supplied summary records private; current visibility unverified",
+      "licence": {
+        "status": "Unverified; no public licence evidence retrieved",
+        "classification": "Unverified; repository not publicly accessible"
+      },
+      "readme": null,
+      "note": "A 404 can mean private, renamed, removed, or inaccessible; it does not prove private visibility.",
+      "initial_anonymous_api_status": 404,
+      "initial_anonymous_page_status": 404
+    },
+    {
+      "name": "3D_monitoring_device_simulation_underground",
+      "url": "https://github.com/maninka123/3D_monitoring_device_simulation_underground",
+      "api_url": "https://api.github.com/repos/maninka123/3D_monitoring_device_simulation_underground",
+      "review_date": "2026-10-08",
+      "summary_visibility": "Private",
+      "anonymous_api_status": 403,
+      "anonymous_page_status": 404,
+      "access": "Not publicly accessible in initial anonymous checks",
+      "visibility": "Supplied summary records private; current visibility unverified",
+      "licence": {
+        "status": "Unverified; no public licence evidence retrieved",
+        "classification": "Unverified; repository not publicly accessible"
+      },
+      "readme": null,
+      "note": "A 404 can mean private, renamed, removed, or inaccessible; it does not prove private visibility.",
+      "initial_anonymous_api_status": 404,
+      "initial_anonymous_page_status": 404
+    },
+    {
+      "name": "Scene-Graph_Mine-Safety",
+      "url": "https://github.com/maninka123/Scene-Graph_Mine-Safety",
+      "api_url": "https://api.github.com/repos/maninka123/Scene-Graph_Mine-Safety",
+      "review_date": "2026-10-08",
+      "summary_visibility": "Public",
+      "anonymous_api_status": 403,
+      "anonymous_page_status": 200,
+      "access": "Publicly accessible",
+      "visibility": "public",
+      "licence": {
+        "status": "No licence detected by GitHub in initial successful API check; public visibility does not grant reuse permission",
+        "anonymous_licence_status": 404,
+        "classification": "No licence detected; reuse terms unverified"
+      },
+      "readme": {
+        "url": "https://github.com/maninka123/Scene-Graph_Mine-Safety/blob/main/README.md",
+        "raw_url": "https://raw.githubusercontent.com/maninka123/Scene-Graph_Mine-Safety/main/README.md",
+        "local_file": "source-records/repositories/Scene-Graph_Mine-Safety/README.md",
+        "sha": "ce7700a1ea404d4b584875bdc9480fe57ea18d6c"
+      },
+      "note": "A 404 can mean private, renamed, removed, or inaccessible; it does not prove private visibility.",
+      "primary_language": "Python",
+      "default_branch": "main",
+      "refresh_note": "Initial anonymous API check succeeded; repeat hit API rate limit; raw README reverified successfully. Primary language from initial API check.",
+      "initial_anonymous_api_status": 200
+    },
+    {
+      "name": "Creep_Monitoring",
+      "url": "https://github.com/maninka123/Creep_Monitoring",
+      "api_url": "https://api.github.com/repos/maninka123/Creep_Monitoring",
+      "review_date": "2026-10-08",
+      "summary_visibility": "Private",
+      "anonymous_api_status": 403,
+      "anonymous_page_status": 404,
+      "access": "Not publicly accessible in initial anonymous checks",
+      "visibility": "Supplied summary records private; current visibility unverified",
+      "licence": {
+        "status": "Unverified; no public licence evidence retrieved",
+        "classification": "Unverified; repository not publicly accessible"
+      },
+      "readme": null,
+      "note": "A 404 can mean private, renamed, removed, or inaccessible; it does not prove private visibility.",
+      "initial_anonymous_api_status": 404,
+      "initial_anonymous_page_status": 404
+    },
+    {
+      "name": "Dynamic_Object_Detection",
+      "url": "https://github.com/maninka123/Dynamic_Object_Detection",
+      "api_url": "https://api.github.com/repos/maninka123/Dynamic_Object_Detection",
+      "review_date": "2026-10-08",
+      "summary_visibility": "Private",
+      "anonymous_api_status": 403,
+      "anonymous_page_status": 404,
+      "access": "Not publicly accessible in initial anonymous checks",
+      "visibility": "Supplied summary records private; current visibility unverified",
+      "licence": {
+        "status": "Unverified; no public licence evidence retrieved",
+        "classification": "Unverified; repository not publicly accessible"
+      },
+      "readme": null,
+      "note": "A 404 can mean private, renamed, removed, or inaccessible; it does not prove private visibility.",
+      "initial_anonymous_api_status": 404,
+      "initial_anonymous_page_status": 404
+    },
+    {
+      "name": "Meshing_toolkit",
+      "url": "https://github.com/maninka123/Meshing_toolkit",
+      "api_url": "https://api.github.com/repos/maninka123/Meshing_toolkit",
+      "review_date": "2026-10-08",
+      "summary_visibility": "Public",
+      "anonymous_api_status": 403,
+      "anonymous_page_status": 200,
+      "access": "Publicly accessible",
+      "visibility": "public",
+      "licence": {
+        "status": "No licence detected by GitHub in initial successful API check; public visibility does not grant reuse permission",
+        "anonymous_licence_status": 404,
+        "classification": "No licence detected; reuse terms unverified"
+      },
+      "readme": {
+        "url": "https://github.com/maninka123/Meshing_toolkit/blob/main/README.md",
+        "raw_url": "https://raw.githubusercontent.com/maninka123/Meshing_toolkit/main/README.md",
+        "local_file": "source-records/repositories/Meshing_toolkit/README.md",
+        "sha": "8befad488531a158e799a5766c2ec815bf04d14b"
+      },
+      "note": "A 404 can mean private, renamed, removed, or inaccessible; it does not prove private visibility.",
+      "primary_language": "Python",
+      "default_branch": "main",
+      "refresh_note": "Initial anonymous API check succeeded; repeat hit API rate limit; raw README reverified successfully. Primary language from initial API check.",
+      "initial_anonymous_api_status": 200
+    }
+  ]
+}
