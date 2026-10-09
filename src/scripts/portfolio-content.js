@@ -5,21 +5,15 @@ window.PORTFOLIO = {
     eyebrow: 'PHD RESEARCH · UNSW SYDNEY', title: 'Below the Surface',
     subtitle: 'From 3D Sensing to Intelligent Underground Mine Safety',
     description: 'Developing reliable spatial sensing, reconstruction and intelligent safety interpretation for underground longwall operations.',
-    tags: ['LiDAR + Camera', '3D Reconstruction', 'Safety AI'],
-    figure: 'array-single-unit-cloud'
+    tags: ['LiDAR + Camera', '3D Reconstruction', 'Safety AI']
   },
   progression: [
-    {label:'Sensing', icon:'scan', section:'capture'},
-    {label:'Calibration', icon:'ruler', section:'reliable'},
-    {label:'Integration', icon:'integrate', section:'unit'},
-    {label:'3D Reconstruction', icon:'cube', section:'array'},
-    {label:'Safety', icon:'shield', section:'safety'}
-  ],
-  highlights: [
-    {value:'2.726', unit:'ms', label:'Corrected timing residual', study:'Measurement study', paper:'measurement', conditions:'Residual after correction in the reported camera–LiDAR timing experiment. This differs from the estimated observation-time offset.'},
-    {value:'10', unit:'Hz', label:'Device output rate', study:'Integrated sensing system', paper:'hardware', conditions:'Reported standard processing mode; low-light enhancement runs at 5.2 Hz under the evaluated conditions. Bench testing and simulation provide pre-deployment evidence.'},
-    {value:'1,029', unit:'', label:'Simulated neighbouring-device trials', study:'Array reconstruction', paper:'array', conditions:'Simulated neighbouring-device evaluations. Pairwise alignment results do not establish face-wide operational accuracy.'},
-    {value:'115', unit:'', label:'Controlled hazard scenarios', study:'Safety reasoning', paper:'safety', conditions:'Controlled scenarios evaluate the reasoning stages. Reported hazard coverage is not perception accuracy or evidence of sustained field deployment.'}
+    {label:'The challenge', icon:'challenge', section:'context'},
+    {label:'Capture', icon:'scan', section:'capture'},
+    {label:'Calibrate', icon:'ruler', section:'reliable'},
+    {label:'Integrate', icon:'integrate', section:'unit'},
+    {label:'Reconstruct', icon:'cube', section:'array'},
+    {label:'Interpret', icon:'shield', section:'safety'}
   ],
   tools: {
     'single-shot-lidar-camera-calibration': {purpose:'Estimate the camera–LiDAR transform from one paired checkerboard capture.', visual:'registration-validation', note:'Related published validation figure; not a repository screenshot.', explore:['Prepare paired image and intensity-cloud inputs.', 'Inspect checkerboard correspondences and reprojection checks.', 'Export the refined sensor transformation.']},
@@ -36,4 +30,21 @@ window.PORTFOLIO = {
     'Scene-Graph_Mine-Safety': {purpose:'Connect scene geometry to hazard evidence and contextual safety reasoning.', visual:'safety-scene-graph-pipeline', note:'Research pipeline; the browser demonstrator operates on a single frame.', explore:['Inspect single-frame semantic detections and scene graphs.', 'Review deterministic rules and contextual reasoning outputs.', 'Examine the broader research framework’s temporal and memory stages.']},
     'Creep_Monitoring': {purpose:'Explore a prototype for comparing support movement across recorded scans.', concept:'movement', explore:['Review the proposed fixed-marker reference workflow.', 'Inspect relative displacement and scan-comparison outputs.', 'Explore optional IMU orientation in the concept/prototype.']}
   }
+};
+
+// Short labels describe each tool's workflow; drawings are explanatory, not results.
+window.PORTFOLIO.toolDrawings = {
+  'single-shot-lidar-camera-calibration': {kind:'calibration', labels:['Shared target','Sensor alignment'], description:'Camera and LiDAR observe checkerboard corners to establish their spatial alignment.'},
+  'enclosure-aware-lidar-correction': {kind:'refraction', labels:['Dome refraction','Ray correction'], description:'Light bends through an optical dome; ray tracing accounts for the changed path.'},
+  'livox-avia-camera-timing': {kind:'timing', labels:['Rotating target','Time offset'], description:'Camera and LiDAR observe one rotating target to compare their observation times.'},
+  'rotating-target-calibration-studio': {kind:'target', labels:['Target geometry','Sensor models'], description:'An apertured rotating target and camera–LiDAR models explain the timing simulation.'},
+  'Sensor_Computer': {kind:'integration', labels:['LiDAR + camera','Colour + 3D'], description:'LiDAR geometry and camera appearance combine into a colourised spatial observation.'},
+  '3D_monitoring_device_simulation_underground': {kind:'simulation', labels:['Virtual sensors','Longwall scene'], description:'Virtual sensing devices observe a simulated longwall with roof supports and a shearer.'},
+  'Lidar_camera_FOV_analysis': {kind:'coverage', labels:['Sensor views','Coverage overlap'], description:'Two sensing fields overlap to illustrate viewing-geometry and coverage analysis.'},
+  'Multi_device_reconstruction-pose_graph': {kind:'array', labels:['Separate views','Shared frame'], description:'Three differently placed observations of roof supports are aligned into one common frame.'},
+  'Dynamic_Object_Detection': {kind:'motion', labels:['Repeated scans','Moving objects'], description:'A person changes position against stationary roof supports; foreground points identify the moving object.'},
+  'Meshing_toolkit': {kind:'mesh', labels:['Point cloud','Surface mesh'], description:'A small set of 3D points is connected into a coloured triangular surface.'},
+  'Central_Monitoring_Platform': {kind:'monitor', labels:['Device streams','Combined view'], description:'Several device streams feed a common spatial view on an operator display.'},
+  'Scene-Graph_Mine-Safety': {kind:'safety', labels:['Scene graph','Hazard reasoning'], description:'Scene geometry becomes relationships between people and equipment, then evidence for a safety check.'},
+  'Creep_Monitoring': {kind:'creep', labels:['Reference markers','Support shift'], description:'Fixed reference markers help compare the relative position of a roof support across recorded scans.'}
 };
