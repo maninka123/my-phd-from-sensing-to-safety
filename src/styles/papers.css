@@ -1,0 +1,12 @@
+/* Separate paper boundaries without increasing the gaps between studies. */
+.paper-entry{background:white;border:1px solid #d6e0ed;border-radius:1.15rem;padding:1.4rem;margin:0 0 1rem}
+.paper-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.65rem 1rem;margin-bottom:1rem}
+.paper-entry .paper-slot{display:block;margin:0;border-left:3px solid #355bc7;background:#eef3fb;padding:.4rem .65rem;border-radius:0 .5rem .5rem 0;color:#2c4f9e;font-size:1.125rem;line-height:1.5;letter-spacing:.015em;text-transform:none}
+.paper-entry .paper-status{display:inline-block;margin:0;padding:.3rem .6rem;border:1px solid #dae2eb;background:#f6f8fb;border-radius:.5rem;color:#53647a;font-size:1.125rem;line-height:1.5}
+.paper-entry h3{font-size:1.375rem;line-height:1.4;margin:0 0 .75rem}
+.paper-entry p{font-size:1.125rem;line-height:1.55;margin:0 0 .55rem}
+.paper-record{margin-bottom:.9rem}.paper-record p:last-child{margin-bottom:0}
+.paper-details .contribution{margin-top:0}.paper-details p:last-child{margin-bottom:0}
+.paper-actions{display:flex;flex-direction:column;align-items:flex-start;gap:.65rem;border-top:1px solid #e0e7f0;margin-top:1rem;padding-top:.85rem}
+.paper-entry .repo-chips{margin:0;gap:.45rem}.paper-actions>.text-link{display:inline-flex;align-items:center;gap:.35rem;font-weight:600}
+@media(max-width:700px){.paper-entry{padding:1.1rem;margin-bottom:.85rem;border-radius:1rem}.paper-entry h3{font-size:1.25rem}.paper-heading{align-items:flex-start;flex-direction:column;gap:.55rem;margin-bottom:.85rem}.paper-entry .paper-slot,.paper-entry .paper-status{max-width:100%;overflow-wrap:anywhere}}
