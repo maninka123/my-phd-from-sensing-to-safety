@@ -63,11 +63,12 @@ dialog{border:1px solid var(--line);border-radius:1.5rem;padding:0;width:min(780
   .closing .button { width: 100%; justify-content: center; }
 }
 @media print { .closing { break-inside: avoid; background: white; } }
-/* Quiet, source-linked ranking references beside the thesis affiliation. */
-.academic-rankings { display: flex; flex-direction: column; gap: .6rem; margin-top: 1rem; }
-.ranking-badge { display: flex; align-items: baseline; gap: .75rem; width: fit-content; max-width: 100%; color: #53647b; font-size: 1.125rem; line-height: 1.5; text-decoration: none; }
-.ranking-badge:hover { color: #244fae; }
-.ranking-position { flex: 0 0 auto; padding: .15rem .55rem; border-radius: .5rem; background: #eaf0fb; color: #294b91; font-size: 1.125rem; font-weight: 650; }
-.ranking-subject .ranking-position { background: #f0eee7; color: #695533; }
-.ranking-edition { color: #647187; white-space: nowrap; }
-@media (max-width: 560px) { .ranking-badge { gap: .6rem; } }
+/* Rankings are inline with the two affiliation lines. */
+.thesis-affiliation { margin-top: .75rem; color: #53647b; }
+.thesis-affiliation > p { display: flex; align-items: baseline; flex-wrap: wrap; gap: .35rem .75rem; margin: .45rem 0; font-size: 1.25rem; line-height: 1.6; }
+.affiliation-rank { display: inline-flex; align-items: baseline; gap: .5rem; flex: 0 0 auto; font-size: 1.125rem; line-height: 1.5; text-decoration: none; color: #294b91; }
+.affiliation-rank strong { padding: .1rem .5rem; border-radius: .4rem; background: #eaf0fb; font-size: 1.125rem; font-weight: 650; }
+.affiliation-rank > span { color: #647187; }
+.affiliation-subject strong { background: #f0eee7; color: #695533; }
+.affiliation-rank:hover strong { background: #dce6fa; color: #244fae; }
+@media (max-width: 560px) { .thesis-affiliation > p { font-size: 1.125rem; } }

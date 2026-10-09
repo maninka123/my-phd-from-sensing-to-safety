@@ -384,7 +384,7 @@ verification/longwall-explorer-mobile.jpg and verification/longwall-explorer-che
 
 - Removed the thesis-plan sentence from the academic introduction. The school
   and UNSW affiliation use separate lines.
-- Added two compact, source-linked ranking references: UNSW Sydney, 19th globally in QS 2027;
+- Added compact source-linked ranks directly before each affiliation line: UNSW Sydney, 19th globally in QS 2027;
   Mineral & Mining Engineering, 3rd globally in QS Subject Rankings 2026.
   Verified against the official UNSW pages recorded in
   `source-records/university-rankings.json`.
