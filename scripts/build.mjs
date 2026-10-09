@@ -1,5 +1,6 @@
 import {readFile,writeFile,mkdir,cp,rm} from 'node:fs/promises';
 import {resolve,sep} from 'node:path';
+import {createHash} from 'node:crypto';
 const root=resolve('.'),dist=resolve('dist');
 if(dist!==root+sep+'dist')throw new Error('Build output must be the project dist directory.');
 const records=JSON.parse(await readFile('source-records/repository-verification.json','utf8'));
@@ -19,6 +20,16 @@ const register={review_date:records.review_date,content_sources:[{file:'GitHub_R
 await writeFile('source-records/public-source-register.json',JSON.stringify(register,null,2)+'\n');
 await rm(dist,{recursive:true,force:true});await mkdir(dist,{recursive:true});
 for(const path of ['index.html','src','public'])await cp(path,resolve(dist,path),{recursive:true});
+// New releases must load their matching scripts, styles and interactive artwork.
+// Stable content hashes avoid stale GitHub Pages/browser caches without changing sources.
+const version=async path=>createHash('sha256').update(await readFile(resolve(dist,path))).digest('hex').slice(0,12);
+const scenePath='src/scripts/longwall-scene.js',sceneAsset='public/assets/diagrams/longwall-story.svg';
+await writeFile(resolve(dist,scenePath),(await readFile(resolve(dist,scenePath),'utf8')).replace(sceneAsset,`${sceneAsset}?v=${await version(sceneAsset)}`));
+let builtIndex=await readFile(resolve(dist,'index.html'),'utf8');
+for(const match of [...builtIndex.matchAll(/(?:src|href)="(src\/[^"?]+\.(?:js|css))"/g)]) {
+  builtIndex=builtIndex.replace(match[0],match[0].replace(match[1],`${match[1]}?v=${await version(match[1])}`));
+}
+await writeFile(resolve(dist,'index.html'),builtIndex);
 await mkdir(resolve(dist,'source-records'));await cp('source-records/public-source-register.json',resolve(dist,'source-records/public-source-register.json'));await cp('source-records/README.md',resolve(dist,'source-records/README.md'));
 await cp('source-records/publication-summary.json',resolve(dist,'source-records/publication-summary.json'));
 await mkdir(resolve(dist,'docs'));await cp('docs/research-map.md',resolve(dist,'docs/research-map.md'));await writeFile(resolve(dist,'.nojekyll'),'');
