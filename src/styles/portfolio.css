@@ -18,15 +18,15 @@
 .research-progression{display:grid;grid-template-columns:repeat(6,1fr);gap:1rem;border-block:1px solid #d8e1ed;padding:1.2rem 0;margin:1.5rem 0}
 .research-progression a{display:flex;flex-direction:column;align-items:center;gap:.65rem;position:relative;text-align:center;color:#263d54;text-decoration:none;font-size:1.125rem;padding:.35rem .5rem;border-radius:.7rem;line-height:1.35}
 .portfolio-icon{width:2rem;height:2rem;color:#247773;flex:none}.progression-arrow{position:absolute;right:-.9rem;top:.7rem;color:#94a7bb;font-size:1.5rem}.research-progression a:hover{background:#e9f1f5}
-/* Every card uses the same 260px illustration frame. */
+/* Every card uses the same compact 240px illustration frame. */
 .repo-grid{align-items:start}.repo-card{padding:0;overflow:hidden}
 .tool-visual{margin:0;background:#f0f5f8}.tool-visual-image{height:200px;padding:1rem;display:flex;align-items:center;justify-content:center;background:white}
 .tool-visual-image a{display:flex;width:100%;height:100%;align-items:center;justify-content:center}.tool-visual-image img,.tool-visual-image svg{display:block;max-width:100%;max-height:100%;width:100%;height:100%;object-fit:contain}
-.repo-card .tool-visual-image{height:260px;box-sizing:border-box;padding:1rem;background:#f5f8fb}
+.repo-card .tool-visual-image{height:240px;box-sizing:border-box;padding:1rem 1rem .6rem;background:#f5f8fb}
 .tool-drawing{display:flex;align-items:stretch;justify-content:center;gap:.25rem;width:100%;height:100%}.tool-drawing-step{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:.65rem;flex:1;min-width:0}
 .tool-visual-image .tool-drawing-step svg{display:block;width:100%;height:145px;max-width:180px;max-height:145px;flex:none}
-.tool-drawing-label{font-size:1.125rem;line-height:1.45;color:#304e68;text-align:center;font-weight:600;min-height:3.5rem;display:block;width:100%;overflow-wrap:anywhere}
-.tool-drawing-arrow{font-size:1.375rem;line-height:1;color:#6d91a6;align-self:center;margin-top:-3.5rem;flex:none}
+.tool-drawing-label{font-size:1.125rem;line-height:1.45;color:#304e68;text-align:center;font-weight:600;min-height:2.75rem;display:block;width:100%;overflow-wrap:anywhere}
+.tool-drawing-arrow{font-size:1.375rem;line-height:1;color:#6d91a6;align-self:center;margin-top:-2.75rem;flex:none}
 .tool-visual figcaption{font-size:1.125rem;line-height:1.5;padding:.9rem 1.2rem;color:#536b83;border-bottom:1px solid #dae4ed}.tool-visual figcaption span{display:block;margin-top:.3rem}
 .repo-card .tool-card-heading{background:white;color:#263d54;border-bottom:0;padding:1.1rem 1.4rem .55rem}.tool-card-heading .repo-category{display:inline-flex;margin:0;padding:.15rem .55rem;background:#e8f3ef;border:1px solid #c8e2da;border-radius:.5rem;color:#26756d;font-size:1.125rem;line-height:1.4;font-weight:550}.repo-card .tool-card-heading h3{margin:.55rem 0 0}
 .repo-card-content{padding:.35rem 1.4rem 1.2rem;display:flex;flex-direction:column}.repo-card-content>p{margin:0 0 .65rem}
