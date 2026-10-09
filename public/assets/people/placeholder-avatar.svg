@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <title>Generic cartoon profile placeholder</title>
+  <defs><clipPath id="circle"><circle cx="120" cy="120" r="120"/></clipPath></defs>
+  <g clip-path="url(#circle)">
+    <path fill="#e7eff7" d="M0 0h240v240H0z"/>
+    <circle cx="190" cy="53" r="41" fill="#d0e6e5"/>
+    <path d="M30 248v-36c0-40 36-62 90-62s90 22 90 62v36" fill="#577bb2"/>
+    <path d="M91 152h58l-9 88h-40" fill="#eaf5f3"/>
+    <path d="m83 162 23 27-15 17-15-48m81 4-23 27 15 17 15-48" fill="#45699f"/>
+    <path d="M104 133h32v27c0 20-32 20-32 0" fill="#dca88b"/>
+    <ellipse cx="76" cy="101" rx="11" ry="16" fill="#e7b79b"/>
+    <ellipse cx="164" cy="101" rx="11" ry="16" fill="#e7b79b"/>
+    <path d="M74 85c0-38 22-59 46-59s46 21 46 59v25c0 32-21 48-46 48s-46-16-46-48" fill="#efc3a6"/>
+    <path d="M73 95c-13-38 5-68 30-73 21-11 59 0 68 31 4 15 0 34-6 42l-4-31c-16 0-30-7-42-17-7 16-22 22-40 23" fill="#2d4156"/>
+    <path d="M88 80q9-5 18-1m28 0q9-4 18 1" stroke="#2d4156" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <g fill="none" stroke="#3c5368" stroke-width="4"><rect x="82" y="87" width="30" height="25" rx="10"/><rect x="128" y="87" width="30" height="25" rx="10"/><path d="M112 97h16m-55-5 9 3m76 0 9-3"/></g>
+    <g fill="#2d4156"><circle cx="99" cy="99" r="3"/><circle cx="141" cy="99" r="3"/></g>
+    <path d="m121 101-4 16h7" stroke="#d0987d" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M105 130q15 13 30 0" stroke="#945e50" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

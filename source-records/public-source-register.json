@@ -431,6 +431,17 @@
       "featured_in_story": true
     },
     {
+      "id": "placeholder-avatar",
+      "path": "public/assets/people/placeholder-avatar.svg",
+      "source_file": "Original website artwork",
+      "source_location": "People & acknowledgements placeholder profiles",
+      "caption": "Generic cartoon avatar for editable placeholder profiles; does not depict an actual supervisor, collaborator or supporter.",
+      "attribution": "Created for Pasindu Ranasinghe?s Research Story Hub",
+      "reuse_status": "original-website-artwork",
+      "display_permission": "public-and-private",
+      "change_note": "Original SVG illustration created 9 October 2026."
+    },
+    {
       "path": "public/assets/diagrams/longwall-story.svg",
       "caption": "Longwall monitoring context",
       "source": "Original longwall cutaway drawn from projected geometry, with interactive equipment labels; no paper image used",

@@ -396,6 +396,17 @@
       "content_note": "Authored method diagram; no mine scan or partner photograph.",
       "sha256": "24238c880ec00a3ca6414f57f837fa11826333d22f3ef3dab3b4ddbb1336e470",
       "featured_in_story": true
+    },
+    {
+      "id": "placeholder-avatar",
+      "path": "/assets/people/placeholder-avatar.svg",
+      "source_file": "Original website artwork",
+      "source_location": "People & acknowledgements placeholder profiles",
+      "caption": "Generic cartoon avatar for editable placeholder profiles; does not depict an actual supervisor, collaborator or supporter.",
+      "attribution": "Created for Pasindu Ranasinghe?s Research Story Hub",
+      "reuse_status": "original-website-artwork",
+      "display_permission": "public-and-private",
+      "change_note": "Original SVG illustration created 9 October 2026."
     }
   ],
   "withheld": [
