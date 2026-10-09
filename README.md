@@ -1,13 +1,17 @@
 # Below the Surface - My PhD Story
 
-**[Explore my PhD story →](https://maninka123.github.io/my-phd-from-sensing-to-safety/)**
-
-[![Preview of my PhD research website](docs/images/website-preview.jpg)](https://maninka123.github.io/my-phd-from-sensing-to-safety/)
-
 I'm Pasindu Ranasinghe. My PhD at UNSW Sydney connects LiDAR-camera sensing,
 colourised 3D reconstruction and safety interpretation for underground longwall
 mining. I bring my research papers and software together through a visual,
 interactive story.
+
+My research asks how I can turn local sensor observations into reliable 3D
+information and use it to understand relationships in a changing underground
+workplace.
+
+**[Explore my PhD story →](https://maninka123.github.io/my-phd-from-sensing-to-safety/)**
+
+[![Preview of my PhD research website](docs/images/website-preview.jpg)](https://maninka123.github.io/my-phd-from-sensing-to-safety/)
 
 ## Explore my research
 
