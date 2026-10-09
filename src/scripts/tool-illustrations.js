@@ -40,7 +40,7 @@
     creep:[()=>creep(false),()=>creep(true)]
   };
   function render(d){
-    return `<div class="tool-drawing tool-drawing-${esc(d.kind)}" role="img" aria-label="${esc(d.description)} Original conceptual illustration, not measured data.">${drawings[d.kind].map((draw,i)=>`<div class="tool-drawing-step"><svg viewBox="0 0 180 145" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">${draw()}</svg><span class="tool-drawing-label">${esc(d.labels[i])}</span></div>${i<d.labels.length-1?'<span class="tool-drawing-arrow" aria-hidden="true">→</span>':''}`).join('')}</div>`;
+    return `<div class="tool-drawing tool-drawing-${esc(d.kind)}" role="img" aria-label="${esc(d.description)} Original conceptual illustration, not measured data.">${drawings[d.kind].map((draw,i)=>`<div class="tool-drawing-step"><svg viewBox="0 0 180 145" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">${draw()}</svg><span class="tool-drawing-label">${esc(d.labels[i])}</span></div>${i<d.labels.length-1?'<span class="tool-drawing-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M3 12h17M14 5l7 7-7 7"/></svg></span>':''}`).join('')}</div>`;
   }
   window.TOOL_ILLUSTRATIONS={render,kinds:Object.keys(drawings)};
 })();
