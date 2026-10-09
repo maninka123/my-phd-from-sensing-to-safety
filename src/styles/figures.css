@@ -115,3 +115,16 @@
 @media (prefers-reduced-motion: reduce) {
   .longwall-marker:active { transform: translate(-50%,-50%); }
 }
+
+/* Connectors sit in the gap, leaving every card border intact. */
+.reasoning-flow { column-gap: 2.5rem; }
+.reasoning-flow > div:not(:last-child)::after {
+  content: "";
+  right: -2rem;
+  top: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: translateY(-50%);
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233153ca' stroke-width='2.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 12h17M14 5l7 7-7 7'/%3E%3C/svg%3E") center / contain no-repeat;
+  pointer-events: none;
+}
