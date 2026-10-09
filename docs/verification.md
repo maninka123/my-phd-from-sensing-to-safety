@@ -384,7 +384,7 @@ verification/longwall-explorer-mobile.jpg and verification/longwall-explorer-che
 
 - Removed the thesis-plan sentence from the academic introduction. The school
   and UNSW affiliation use separate lines.
-- Added two source-linked ranking badges: UNSW Sydney, 19th globally in QS 2027;
+- Added two compact, source-linked ranking references: UNSW Sydney, 19th globally in QS 2027;
   Mineral & Mining Engineering, 3rd globally in QS Subject Rankings 2026.
   Verified against the official UNSW pages recorded in
   `source-records/university-rankings.json`.
@@ -395,7 +395,7 @@ verification/longwall-explorer-mobile.jpg and verification/longwall-explorer-che
 - Cropped the original longwall SVG to `0 70 1600 485`, removing unused space
   without stretching equipment. Hit areas and native markers share that crop.
 - Browser checks at 1440, 900, 390 and 320 pixels passed: no horizontal overflow,
-  clipped badge text or overlapping markers. Both tool detail panels and all
+  clipped ranking text or overlapping markers. Both tool detail panels and all
   five illustration descriptions work. Build and static checks passed.
 - Local proof: `verification/thesis-rankings-desktop.jpg` and
   `verification/longwall-explorer-desktop.jpg`.

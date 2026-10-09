@@ -63,17 +63,11 @@ dialog{border:1px solid var(--line);border-radius:1.5rem;padding:0;width:min(780
   .closing .button { width: 100%; justify-content: center; }
 }
 @media print { .closing { break-inside: avoid; background: white; } }
-/* Source-linked university rankings beside the thesis affiliation. */
-.academic-rankings { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; max-width: 58rem; }
-.ranking-badge { display: flex; align-items: center; gap: 1.25rem; flex: 1 1 23rem; min-width: 0; padding: 1.25rem 1.5rem; border: 1px solid #cbd8e7; border-radius: 1.25rem; background: #fff; color: #1c2d44; text-decoration: none; }
-.ranking-badge:hover { border-color: #315bcc; background: #f0f5ff; }
-.ranking-position { display: flex; flex-direction: column; flex: 0 0 auto; align-items: center; color: #3156bb; }
-.ranking-position > strong { font-family: Georgia, 'Times New Roman', serif; font-size: 3rem; font-weight: 500; line-height: 1.1; letter-spacing: -.04em; }
-.ranking-position > strong > span { font-family: inherit; font-size: 1.125rem; letter-spacing: 0; vertical-align: super; }
-.ranking-position > span { font-size: 1.125rem; line-height: 1.5; }
-.ranking-label { display: flex; min-width: 0; flex-direction: column; gap: .35rem; font-size: 1.125rem; line-height: 1.5; }
-.ranking-label > strong { font-size: 1.25rem; font-weight: 650; }
-.ranking-label > span { color: #53647b; }
-.ranking-subject { background: #fffdf4; border-color: #e2d7b8; }
-.ranking-subject .ranking-position { color: #795516; }
-@media (max-width: 560px) { .ranking-badge { gap: 1rem; padding: 1rem; } .academic-rankings { gap: .75rem; } }
+/* Quiet, source-linked ranking references beside the thesis affiliation. */
+.academic-rankings { display: flex; flex-direction: column; gap: .6rem; margin-top: 1rem; }
+.ranking-badge { display: flex; align-items: baseline; gap: .75rem; width: fit-content; max-width: 100%; color: #53647b; font-size: 1.125rem; line-height: 1.5; text-decoration: none; }
+.ranking-badge:hover { color: #244fae; }
+.ranking-position { flex: 0 0 auto; padding: .15rem .55rem; border-radius: .5rem; background: #eaf0fb; color: #294b91; font-size: 1.125rem; font-weight: 650; }
+.ranking-subject .ranking-position { background: #f0eee7; color: #695533; }
+.ranking-edition { color: #647187; white-space: nowrap; }
+@media (max-width: 560px) { .ranking-badge { gap: .6rem; } }
