@@ -63,9 +63,11 @@ dialog{border:1px solid var(--line);border-radius:1.5rem;padding:0;width:min(780
   .closing .button { width: 100%; justify-content: center; }
 }
 @media print { .closing { break-inside: avoid; background: white; } }
-/* Rankings are inline with the two affiliation lines. */
-.thesis-affiliation { margin-top: .75rem; color: #53647b; }
-.thesis-affiliation > p { display: flex; align-items: baseline; flex-wrap: wrap; gap: .35rem .75rem; margin: .45rem 0; font-size: 1.25rem; line-height: 1.6; }
+/* Affiliation names come first, followed by a divider and compact ranks. */
+.thesis-title > .intro { margin-bottom: 0; }
+.thesis-affiliation { margin-top: 0; color: #53647b; }
+.thesis-affiliation > p { display: flex; align-items: baseline; flex-wrap: wrap; gap: .35rem .75rem; margin: 0; font-size: 1.25rem; line-height: 1.6; }
+.affiliation-divider { color: #8290a3; }
 .affiliation-rank { display: inline-flex; align-items: baseline; gap: .5rem; flex: 0 0 auto; font-size: 1.125rem; line-height: 1.5; text-decoration: none; color: #294b91; }
 .affiliation-rank strong { padding: .1rem .5rem; border-radius: .4rem; background: #eaf0fb; font-size: 1.125rem; font-weight: 650; }
 .affiliation-rank > span { color: #647187; }
