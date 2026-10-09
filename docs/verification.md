@@ -353,3 +353,30 @@ verification/repetition-summary-mobile.jpg,
 verification/repetition-story-closing.jpg and verification/repetition-checks.json.
 All writes stayed inside Github repo summary. Nothing was committed, pushed
 or deployed.
+
+## Original interactive longwall illustration - 9 October 2026
+
+Recreated only the opening Story illustration as original SVG artwork, generated
+from projected equipment geometry. No existing paper image is used in this
+visualization. The level view uses equal horizontal and vertical scale so
+cutting drums stay round and the longwall row stays horizontal. Five blue
+hydraulic shields, a yellow twin-drum shearer, a teal face conveyor, a retained
+section of charcoal coal seam and a green proposed sensing unit are shown.
+Fine detail was reduced to keep the illustration easy to read.
+
+The image has five numbered HTML buttons and matching named controls. Clicking
+an equipment region, marker or label updates one concise description beneath
+the artwork, without navigation or a modal. Native keyboard activation, visible
+focus, selected states, a polite live announcement and reduced-motion feedback
+are included. The card identifies the artwork as an illustrative cutaway.
+
+Browser checks at 1440, 900, 390 and 320 CSS pixels found an 18px minimum,
+44px marker targets, no overlapping markers, no clipped text and no horizontal
+page overflow. All five markers returned their intended descriptions at 320px;
+marker and named-control selection stayed synchronized. Enter and Space
+activation passed, as did direct region clicks for the coal face and sensing
+unit. Only the opening visualization and its supporting code/documentation
+changed; scientific figure files and the other app views were retained.
+
+Proof: verification/longwall-explorer-desktop.jpg,
+verification/longwall-explorer-mobile.jpg and verification/longwall-explorer-checks.json.

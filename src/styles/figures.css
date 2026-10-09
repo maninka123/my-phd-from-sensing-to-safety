@@ -69,3 +69,50 @@
   .unit-components { grid-template-columns: 1fr; }
   .unit-illustration h3 { font-size: 1.5rem; }
 }
+
+/* The opening cutaway is a self-contained explorer; other figures are unchanged. */
+.longwall-scene { position: relative; isolation: isolate; }
+.longwall-explorer [data-longwall-item="supports"] { --part-color: #a6cce9; --part-ink: #18364d; }
+.longwall-explorer [data-longwall-item="shearer"] { --part-color: #f6ce70; --part-ink: #4c3610; }
+.longwall-explorer [data-longwall-item="conveyor"] { --part-color: #83d3d6; --part-ink: #153d46; }
+.longwall-explorer [data-longwall-item="face"] { --part-color: #c7b3a3; --part-ink: #3d3026; }
+.longwall-explorer [data-longwall-item="sensor"] { --part-color: #95dfba; --part-ink: #163f2c; }
+.longwall-scene > img { display: block; width: 100%; height: auto; }
+.longwall-hitareas { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.longwall-hitarea { fill: transparent; stroke: transparent; stroke-width: 2; pointer-events: all; cursor: pointer; }
+.longwall-hitarea:hover { fill: #cceaf408; }
+.longwall-leader { fill: none; stroke: #c2e7ea; stroke-width: 2; opacity: .7; }
+.longwall-marker { position: absolute; z-index: 2; display: grid; place-items: center; transform: translate(-50%,-50%); width: 2.75rem; height: 2.75rem; border: 1px solid #e3edf1; border-radius: 50%; background: var(--part-color); box-shadow: 0 2px 12px #03101d80; color: var(--part-ink); font-size: 1.125rem; line-height: 1; font-weight: 650; padding: 0; touch-action: manipulation; }
+.longwall-marker:hover, .longwall-marker[aria-pressed="true"] { outline: 3px solid var(--part-color); outline-offset: 4px; }
+.longwall-marker:active { transform: translate(-50%,-50%) scale(.95); }
+.longwall-marker span { position: relative; z-index: 1; }
+.longwall-explorer button:focus-visible { outline: 3px solid #f8d676; outline-offset: 4px; }
+.longwall-explorer .longwall-caption { display: block; }
+.longwall-caption-top { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+.longwall-caption-top > p { max-width: none; }
+.longwall-detail { border-left: 2px solid #89d8d8; padding-left: 1.2rem; min-height: 6.75rem; }
+.longwall-detail > strong { font-size: 1.25rem; line-height: 1.4; font-weight: 650; margin: 0 0 .4rem; }
+.longwall-detail p { max-width: none; font-size: 1.125rem; line-height: 1.65; }
+.longwall-parts { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 1.4rem; }
+.longwall-parts button { display: inline-flex; align-items: center; gap: .6rem; padding: .55rem .9rem; min-height: 2.75rem; border: 1px solid var(--part-color); border-radius: 2rem; background: #203b50; color: #e0eef4; font-size: 1.125rem; line-height: 1.5; text-align: left; touch-action: manipulation; }
+.longwall-parts button span { color: var(--part-color); font-weight: 650; }
+.longwall-parts button:hover, .longwall-parts button[aria-pressed="true"] { background: var(--part-color); border-color: var(--part-color); color: var(--part-ink); }
+.longwall-parts button[aria-pressed="true"] span { color: inherit; }
+.longwall-parts button:active { background: #78c9c4; }
+@media (max-width: 700px) {
+  .longwall-caption-top { grid-template-columns: 1fr; gap: 1.25rem; }
+  .longwall-detail { min-height: 6.5rem; }
+  .longwall-parts { gap: .5rem; margin-top: 1rem; }
+  .longwall-parts button { padding-inline: .75rem; }
+  .longwall-marker { background: transparent; border-color: transparent; box-shadow: none; }
+  .longwall-marker::before { content: ""; position: absolute; inset: 7px; border: 1px solid #e3edf1; border-radius: 50%; background: var(--part-color); box-shadow: 0 2px 8px #03101d70; }
+  .longwall-marker:hover:not(:focus-visible), .longwall-marker[aria-pressed="true"]:not(:focus-visible) { outline: none; }
+  .longwall-marker[aria-pressed="true"]::before { outline: 2px solid var(--part-color); outline-offset: 2px; }
+}
+@media (prefers-contrast: more) {
+  .longwall-marker, .longwall-parts button { background: #102b3a; color: white; border-color: white; }
+  .longwall-marker[aria-pressed="true"], .longwall-parts button[aria-pressed="true"] { background: #b1eeeb; color: #102b3a; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .longwall-marker:active { transform: translate(-50%,-50%); }
+}
