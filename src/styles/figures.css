@@ -1,4 +1,4 @@
-/* Paper panels remain intact. Captions and source links use native reading sizes. */
+/* Paper panels remain intact; captions use native reading sizes. */
 .paper-figure {
   min-width: 0;
   padding: 1.6rem;
@@ -14,8 +14,7 @@
 .paper-figure-image img { width: 100%; height: auto; object-fit: contain; }
 .paper-figure .caption { padding-top: 1.25rem; border-top: 1px solid var(--line); margin-top: 1.3rem; }
 .paper-figure .caption p { font-size: var(--text-caption); line-height: 1.7; margin-bottom: 1rem; }
-.paper-figure-credit { color: var(--muted); }
-.paper-figure .text-link { display: inline-block; }
+.paper-figure .caption p:last-child { margin-bottom: 0; }
 .paper-figure-featured { margin-top: 2.5rem; }
 .paper-figure-featured .paper-figure-image { max-width: 62rem; margin-inline: auto; }
 .paper-figure-tall .paper-figure-image img { max-height: 38rem; }
