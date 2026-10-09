@@ -73,7 +73,7 @@ body { font-size: var(--text-body); line-height: 1.7; }
 .filter-field input, .filter-field select { min-height: 3rem; }
 .detail-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
 .detail-grid > div { min-width: 0; overflow-wrap: anywhere; }
-.close-button { flex-shrink: 0; width: 2.75rem; height: 2.75rem; }
+.close-button { flex-shrink: 0; width: 3rem; height: 3rem; }
 table { font-size: var(--text-caption); line-height: 1.7; }
 .academic-nav { top: 8.5rem; }
 .academic-nav a { overflow-wrap: anywhere; }
