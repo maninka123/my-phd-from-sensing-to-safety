@@ -28,7 +28,7 @@ window.PORTFOLIO = {
     'Meshing_toolkit': {purpose:'Reconstruct coloured surfaces from point clouds and compare meshing methods.', concept:'mesh', explore:['Prepare PCD or PLY point-cloud inputs.', 'Compare Ball Pivoting and Poisson reconstruction.', 'Inspect held-out consistency and benchmark reports.']},
     'Central_Monitoring_Platform': {purpose:'Inspect sensing streams, recordings and combined reconstructions in one interface.', visual:'array-monitoring-interface', note:'Documented application displaying simulation; not a live embedded monitor.', explore:['Review ROSBridge and TCPROS connection workflows.', 'Explore recording, filtering and measurement functions.', 'Inspect individual and combined device views described in guide v3.']},
     'Scene-Graph_Mine-Safety': {purpose:'Connect scene geometry to hazard evidence and contextual safety reasoning.', visual:'safety-scene-graph-pipeline', note:'Research pipeline; the browser demonstrator operates on a single frame.', explore:['Inspect single-frame semantic detections and scene graphs.', 'Review deterministic rules and contextual reasoning outputs.', 'Examine the broader research framework’s temporal and memory stages.']},
-    'Creep_Monitoring': {purpose:'Explore a prototype for comparing support movement across recorded scans.', concept:'movement', explore:['Review the proposed fixed-marker reference workflow.', 'Inspect relative displacement and scan-comparison outputs.', 'Explore optional IMU orientation in the concept/prototype.']}
+    'Creep_Monitoring': {purpose:'Explore a prototype for monitoring unwanted movement of underground roof supports.', concept:'movement', explore:['Review the proposed fixed-marker reference workflow.', 'Inspect relative displacement and scan-comparison outputs.', 'Explore optional IMU orientation in the concept/prototype.']}
   }
 };
 
@@ -46,5 +46,5 @@ window.PORTFOLIO.toolDrawings = {
   'Meshing_toolkit': {kind:'mesh', labels:['Point cloud','Surface mesh'], description:'A small set of 3D points is connected into a coloured triangular surface.'},
   'Central_Monitoring_Platform': {kind:'monitor', labels:['Device streams','Combined view'], description:'Several device streams feed a common spatial view on an operator display.'},
   'Scene-Graph_Mine-Safety': {kind:'safety', labels:['Scene graph','Hazard reasoning'], description:'Scene geometry becomes relationships between people and equipment, then evidence for a safety check.'},
-  'Creep_Monitoring': {kind:'creep', labels:['Reference markers','Support shift'], description:'Fixed reference markers help compare the relative position of a roof support across recorded scans.'}
+  'Creep_Monitoring': {kind:'creep', labels:['Reference markers','Support creep'], description:'Reference markers help compare recorded scans for unwanted movement of underground roof-support structures.'}
 };

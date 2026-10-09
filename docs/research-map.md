@@ -60,7 +60,7 @@ formats alone do not establish an implemented pipeline.
 - Array trials: 1,029 simulated neighbouring-device evaluations; pairwise errors are not global operational accuracy.
 - Safety: 115 controlled scenarios; coverage 57% / 76% / 93% at successive reasoning stages.
 - MineGraph Studio: one-frame browser demonstrator without temporal graphs or live sensing.
-- Creep Monitoring: concept/prototype for gradual relative roof-support movement.
+- Creep monitoring: concept/prototype for monitoring unwanted movement of underground roof-support structures.
 
 ## Public record updates
 
