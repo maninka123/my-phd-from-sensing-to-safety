@@ -380,3 +380,22 @@ changed; scientific figure files and the other app views were retained.
 
 Proof: verification/longwall-explorer-desktop.jpg,
 verification/longwall-explorer-mobile.jpg and verification/longwall-explorer-checks.json.
+# Affiliation, tools and compact cutaway follow-up — 9 October 2026
+
+- Removed the thesis-plan sentence from the academic introduction. The school
+  and UNSW affiliation use separate lines.
+- Added two source-linked ranking badges: UNSW Sydney, 19th globally in QS 2027;
+  Mineral & Mining Engineering, 3rd globally in QS Subject Rankings 2026.
+  Verified against the official UNSW pages recorded in
+  `source-records/university-rankings.json`.
+- Renamed the existing dynamic-object and meshing records so their names are
+  easy to find. Ordered them after multi-device alignment in Reconstruction,
+  before the monitoring platform and safety interpretation. Repository links,
+  evidence distinctions and paper mappings are preserved; no duplicate tools.
+- Cropped the original longwall SVG to `0 70 1600 485`, removing unused space
+  without stretching equipment. Hit areas and native markers share that crop.
+- Browser checks at 1440, 900, 390 and 320 pixels passed: no horizontal overflow,
+  clipped badge text or overlapping markers. Both tool detail panels and all
+  five illustration descriptions work. Build and static checks passed.
+- Local proof: `verification/thesis-rankings-desktop.jpg` and
+  `verification/longwall-explorer-desktop.jpg`.

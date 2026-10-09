@@ -143,6 +143,6 @@ body+=box(9.62,2.96,2.76,.34,.4,.18,'#97e0bc','#398668','#285748');
 body+=dot(sensor,10,'#58c99b','#c9eced')+dot([9.78,3.17,2.885],4,'#154f41','#9aedcd');
 body+=line([9.79,2.98,2.93],[9.79,3,3.03],'#d9e2e2',3);
 body+=`</g>`;
-const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600" role="img"><title>Original illustrated cutaway of a longwall mining face</title><desc>Level view of hydraulic shield supports, a twin-drum shearer, an armoured face conveyor, an exposed section of coal seam and a proposed sensing unit. The foreground coal seam is cut away to reveal the equipment. Illustrative geometry, not a photograph or measured research result.</desc>${defs}${body}</svg>`;
+const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="485" viewBox="0 70 1600 485" role="img"><title>Original illustrated cutaway of a longwall mining face</title><desc>Level view of hydraulic shield supports, a twin-drum shearer, an armoured face conveyor, an exposed section of coal seam and a proposed sensing unit. The foreground coal seam is cut away to reveal the equipment. Illustrative geometry, not a photograph or measured research result.</desc>${defs}${body}</svg>`;
 await writeFile(resolve(out,'longwall-story.svg'),svg);
 console.log('Created original longwall cutaway artwork.');

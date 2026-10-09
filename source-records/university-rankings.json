@@ -1,0 +1,20 @@
+{
+  "verified_on": "2026-10-09",
+  "rankings": [
+    {
+      "institution": "UNSW Sydney",
+      "ranking": "QS World University Rankings",
+      "edition": 2027,
+      "world_rank": 19,
+      "source": "https://www.unsw.edu.au/about-us/excellence/rankings-reputation"
+    },
+    {
+      "institution": "UNSW Sydney",
+      "subject": "Mineral & Mining Engineering",
+      "ranking": "QS World University Rankings by Subject",
+      "edition": 2026,
+      "world_rank": 3,
+      "source": "https://www.unsw.edu.au/engineering/our-schools/minerals-and-energy-resources-engineering"
+    }
+  ]
+}
